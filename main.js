@@ -1353,4 +1353,5 @@ document.write(getDetails("Osama Mohamed", "38 Is My Age", "Egypt"));
 // Hello Ahmed A., Your Age Is 32, You Live In SY
 
 // return zName.substring(0, 6) + zName.substring(6, 7) + ".";
+// this comment commit by cmder
 // this comment commit by vs
