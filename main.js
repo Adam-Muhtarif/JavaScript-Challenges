@@ -1355,3 +1355,4 @@ document.write(getDetails("Osama Mohamed", "38 Is My Age", "Egypt"));
 // return zName.substring(0, 6) + zName.substring(6, 7) + ".";
 // this comment commit by cmder
 // this comment commit by vs
+// Another VsCode Commit and Push Together
