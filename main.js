@@ -1318,41 +1318,63 @@ for (let i = start; i < mix.length; i++) {
 */
 
 //---------------exercise 39--------------------
-test = "Osama Mohamed";
-// document.write(test)
-// zName.substring(0, 4);
+/*
 
-function getDetails(zName, zAge, zCountry) {
-  function namePattern(zName) {
-    // Osama Mohamed => Osama M.
-    return zName.substring(0, 6) + zName.substring(6, 7).toUpperCase() + ".";
+  function getDetails(zName, zAge, zCountry) {
+    function namePattern(zName) {
+      // Osama Mohamed => Osama M.
+      return zName.substring(0, 6) + zName.substring(6, 7).toUpperCase() + ".";
+    }
+    function ageWithMessage(zAge) {
+      // 38 Is My Age => Your Age Is 38
+      return `, Your Age Is ` + zAge.substring(0, 2);
+    }
+    function countryTwoLetters(zCountry) {
+      // Egypt => You Live In EG
+      return `, You Live in ` + zCountry.substring(0, 2).toUpperCase();
+    }
+    function fullDetails() {
+      return (
+        `Hello ` +
+        namePattern(zName) +
+        ageWithMessage(zAge) +
+        countryTwoLetters(zCountry)
+      );
+    }
+    return fullDetails(); // Do Not Edit This
   }
-  function ageWithMessage(zAge) {
-    // 38 Is My Age => Your Age Is 38
-    return `, Your Age Is ` + zAge.substring(0, 2);
-  }
-  function countryTwoLetters(zCountry) {
-    // Egypt => You Live In EG
-    return `, You Live in ` + zCountry.substring(0, 2).toUpperCase();
-  }
-  function fullDetails() {
-    return (
-      `Hello ` +
-      namePattern(zName) +
-      ageWithMessage(zAge) +
-      countryTwoLetters(zCountry)
-    );
-  }
-  return fullDetails(); // Do Not Edit This
+
+  document.write(getDetails("Osama Mohamed", "38 Is My Age", "Egypt"));
+  // Hello Osama M., Your Age Is 38, You Live In EG
+
+  // document.write(getDetails("Ahmed ali", "32 Is The Age", "Syria"));
+  // Hello Ahmed A., Your Age Is 32, You Live In SY
+*/
+
+//---------------64 To 70--------------------
+
+//**************** Assignment 2 *********************/
+`# Change These Two Functions To Arrow Function`;
+
+`# Function 1`;
+function itsMe() {
+  return `Iam A Normal Function`;
 }
 
-document.write(getDetails("Osama Mohamed", "38 Is My Age", "Egypt"));
-// Hello Osama M., Your Age Is 38, You Live In EG
+`# Function 2`;
+function urlCreate(protocol, web, tld) {
+  return `${protocol}://www.${web}.${tld}`;
+}
 
-// document.write(getDetails("Ahmed ali", "32 Is The Age", "Syria"));
-// Hello Ahmed A., Your Age Is 32, You Live In SY
+console.log(itsMe()); // Iam A Normal Function
+console.log(urlCreate("https", "elzero", "org")); // https://www.elzero.org
 
-// return zName.substring(0, 6) + zName.substring(6, 7) + ".";
-// this comment commit by cmder
-// this comment commit by vs
-// Another VsCode Commit and Push Together
+//**************** Assignment 2 Solution ************************* */
+
+`# Function 1`;
+itsMe = () => ` Iam A Arrow Function`;
+document.write(`<div>${itsMe()}</div>`);
+
+`# Function 2`;
+urlCreate = (protocol, web, tld) => `${protocol}://www.${web}.${tld}`;
+document.write(`<div>${urlCreate("https", "elzero", "org")}</div>`); // Iam A Normal Function
