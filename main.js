@@ -1378,4 +1378,3 @@ document.write(`<div>${itsMe()}</div>`);
 `# Function 2`;
 urlCreate = (protocol, web, tld) => `${protocol}://www.${web}.${tld}`;
 document.write(`<div>${urlCreate("https", "elzero", "org")}</div>`); // Iam A Normal Function
-// 
