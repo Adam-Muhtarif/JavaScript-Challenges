@@ -1316,3 +1316,40 @@ for (let i = start; i < mix.length; i++) {
   };
   document.write(calc(10, 50, 20)); //80
 */
+
+//---------------exercise 39--------------------
+test = "Osama Mohamed";
+// document.write(test)
+// zName.substring(0, 4);
+
+function getDetails(zName, zAge, zCountry) {
+  function namePattern(zName) {
+    // Osama Mohamed => Osama M.
+    return zName.substring(0, 6) + zName.substring(6, 7).toUpperCase() + ".";
+  }
+  function ageWithMessage(zAge) {
+    // 38 Is My Age => Your Age Is 38
+    return `, Your Age Is ` + zAge.substring(0, 2);
+  }
+  function countryTwoLetters(zCountry) {
+    // Egypt => You Live In EG
+    return `, You Live in ` + zCountry.substring(0, 2).toUpperCase();
+  }
+  function fullDetails() {
+    return (
+      `Hello ` +
+      namePattern(zName) +
+      ageWithMessage(zAge) +
+      countryTwoLetters(zCountry)
+    );
+  }
+  return fullDetails(); // Do Not Edit This
+}
+
+document.write(getDetails("Osama Mohamed", "38 Is My Age", "Egypt"));
+// Hello Osama M., Your Age Is 38, You Live In EG
+
+// document.write(getDetails("Ahmed ali", "32 Is The Age", "Syria"));
+// Hello Ahmed A., Your Age Is 32, You Live In SY
+
+// return zName.substring(0, 6) + zName.substring(6, 7) + ".";
