@@ -1352,29 +1352,131 @@ for (let i = start; i < mix.length; i++) {
 */
 
 //---------------64 To 70--------------------
+/* 
+//**************** Assignment 2 ********************
+  `# Change These Two Functions To Arrow Function`;
 
-//**************** Assignment 2 *********************/
-`# Change These Two Functions To Arrow Function`;
+  `# Function 1`;
+  function itsMe() {
+    return `Iam A Normal Function`;
+  }
 
-`# Function 1`;
-function itsMe() {
-  return `Iam A Normal Function`;
+  `# Function 2`;
+  function urlCreate(protocol, web, tld) {
+    return `${protocol}://www.${web}.${tld}`;
+  }
+
+  console.log(itsMe()); // Iam A Normal Function
+  console.log(urlCreate("https", "elzero", "org")); // https://www.elzero.org
+  
+  //**************** Assignment 2 Solution ***************
+  
+  // `# Function 1`;
+  // itsMe = () => ` Iam A Arrow Function`;
+  // document.write(`<div>${itsMe()}</div>`);
+  
+  // `# Function 2`;
+  // urlCreate = (protocol, web, tld) => `${protocol}://www.${web}.${tld}`;
+  // document.write(`<div>${urlCreate("https", "elzero", "org")}</div>`); // Iam A Normal Function
+  
+  
+
+//**************** Assignment 3 *************************
+`Change This Regular Function To Arrow Function`;
+
+function checker(zName) {
+  return function (status) {
+    return function (salary) {
+      return status === "Available"
+        ? `${zName}, My Salary Is ${salary}`
+        : `Iam Not Available`;
+    };
+  };
 }
 
-`# Function 2`;
-function urlCreate(protocol, web, tld) {
-  return `${protocol}://www.${web}.${tld}`;
+// document.write(checker("Osama")("Available")(4000)); // Osama, My Salary Is 4000
+// console.log(checker("Ahmed")("Not Available")()); // Iam Not Avaialble
+
+//**************** Assignment 3 Solution *************************
+
+checker2 = (zName) => (status) => (salary) =>
+status === "Available"
+    ? `${zName}, My Salary Is ${salary}`
+    : `Iam Not Available`;
+
+document.write(checker2("Adam")("Available")(9000));
+
+*/
+
+//**************** Assignment 4  *************************
+/*
+  function specialMix(...data) {
+    // Your Code Here
+  }
+
+  console.log(specialMix(10, 20, 30)); // 60
+  console.log(specialMix("10Test", "Testing", "20Cool")); // 30
+  console.log(specialMix("Testing", "10Testing", "40Cool")); // 50
+  console.log(specialMix("Test", "Cool", "Test")); // All Is Strings
+*/
+//**************** Assignment 4 Solution *************************
+/* 
+function specialMix(...data) {
+  let result = 0;
+  let number;
+  let arrayOfNumbers = [];
+
+  function check(data) {
+    for (let i = 0; i < data.length; i++) {
+      if (typeof data[i] === "number") {
+        arrayOfNumbers.push(data[i]);
+      }
+
+      if (typeof data[i] === "string") {
+        number = data[i].match(/\d+/g);
+        if (number === null) {
+          continue;
+        } else arrayOfNumbers.push(parseFloat(number));
+      }
+    }
+    return sum(arrayOfNumbers);
+  }
+
+  function sum(arrayOfNumbers) {
+    for (let i = 0; i < arrayOfNumbers.length; i++) {
+      result += arrayOfNumbers[i];
+    }
+    return result === 0 ? `All Is String` : `Result Is = ${result}`;
+  }
+
+  return check(data);
 }
 
-console.log(itsMe()); // Iam A Normal Function
-console.log(urlCreate("https", "elzero", "org")); // https://www.elzero.org
+// document.write(specialMix(10, 20, 30)); //60
+// document.write(specialMix("10Test", "Testing", "20Cool")); // 30
+// document.write(specialMix("Testing", "10Testing", "40Cool")); // 50
+// document.write(specialMix("Test", "Cool", "Test")); // All Is Strings
 
-//**************** Assignment 2 Solution ************************* */
+//**************** New Information  *************************
 
-`# Function 1`;
-itsMe = () => ` Iam A Arrow Function`;
-document.write(`<div>${itsMe()}</div>`);
+  !To eliminate numbers from a string we use this method below
+  ------------word = word.replace(/\d+/g, "");------------
+  "\d" => Decimals 0-9 we can replace "\d" with "[0-9]" => the same results
+  "\D" => Removes the string and keep the numbers
+  "^[0-9]"  => It means remove everything upper than d or 0-9
+  "g"   => Global
+  ""   => Is what eliminates the numbers with making it empty string
+  
+// let word = "111adam222";
+// document.write(`Before Eliminate  ${word}`);
+// word = word.replace(/\d+/g, "");
+// document.write(`</br> After Eliminate  ${word}`);
 
-`# Function 2`;
-urlCreate = (protocol, web, tld) => `${protocol}://www.${web}.${tld}`;
-document.write(`<div>${urlCreate("https", "elzero", "org")}</div>`); // Iam A Normal Function
+// !To Extract numbers from a string we use this method below
+// ------------let numbers = word.match(/\d+/g)---------;
+
+// They export numbers by finding them
+
+// let numbers = word.match(/\d+/g);
+// document.write(`</br> After Eliminate  ${numbers}`);
+*/
