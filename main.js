@@ -1480,5 +1480,3 @@ function specialMix(...data) {
 // let numbers = word.match(/\d+/g);
 // document.write(`</br> After Eliminate  ${numbers}`);
 */
-
-
