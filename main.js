@@ -1481,11 +1481,4 @@ function specialMix(...data) {
 // document.write(`</br> After Eliminate  ${numbers}`);
 */
 
-<<<<<<< HEAD
-=======
-`# Function 2`;
-urlCreate = (protocol, web, tld) => `${protocol}://www.${web}.${tld}`;
-document.write(`<div>${urlCreate("https", "elzero", "org")}</div>`); // Iam A Normal Function
-//
-//
->>>>>>> 963361b7d036b389e9d559e5532eb2b10db09325
+
