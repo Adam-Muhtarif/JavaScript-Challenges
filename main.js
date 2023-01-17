@@ -185,7 +185,7 @@
   
 */
 
-// --------------------Challenge 3-------------
+//? --------------------Challenge 3-------------
 /*  let d = "-100";
 
     let e = "20";
@@ -290,7 +290,7 @@
   
   */
 
-// --------------------Challenge 4-------------
+//? --------------------Challenge 4-------------
 
 /*  let a = 1_00;
 let b = 2_00.5;
@@ -314,7 +314,7 @@ console.log((Math.ceil(--b) / Math.ceil(d)).toFixed(2)); // 66.67 => String
 console.log(Math.ceil(Math.ceil(--b) / Math.ceil(d))); // 67 => Number
 */
 
-// --------------------Challenge 5-------------
+//? --------------------Challenge 5-------------
 
 /* let a = "Elzero Web School";
 
@@ -344,64 +344,104 @@ document.write(solution);
 
 */
 
-//---------------exercise 15--------------------
-/* 
-    // Your Solutions
-    console.log(1e5); // 100000
-    console.log(100 * 1000); // 100000
-    console.log(+100000); // 100000
-    console.log(parseInt(100000)); // 100000
-    console.log(`${Number(100000)}`); // 100000
-    console.log(`${parseInt(100000)}`); // 100000
-    console.log(parseFloat(parseInt(100000))); // 100000
-    console.log(+100_000); // 100000
-    console.log(); // 100000
-    console.log(); // 100000
-*/
+//**************** Assignment 1  *************************
+`
+Print the number 100,000 in 13 different ways
+Each method must be different from the other
+The use of Operators for arithmetic operations is only once
+There are 3 examples of printing the number to clarify the idea more
+`;
 
-//---------------exercise 16--------------------
+//**************** Assignment 1 Solution  *************************
+
+// Your Solutions
+// console.log(1e5); // 100000
+// console.log(100 * 1000); // 100000
+// console.log(+100000); // 100000
+// console.log(parseInt(100000)); // 100000
+// console.log(`${Number(100000)}`); // 100000
+// console.log(`${parseInt(100000)}`); // 100000
+// console.log(parseFloat(parseInt(100000))); // 100000
+// console.log(+100_000); // 100000
+// console.log(); // 100000
+// console.log(); // 100000
+
+//**************** Assignment 2 *************************
+`
+Use MIN_SAFE_INTEGER to get the desired result in the example
+`;
+
+//**************** Assignment 2 Solution *************************
+
 // console.log(-Number.MIN_SAFE_INTEGER)
 
-//---------------exercise 17--------------------
-/* 
-    console.log(
-    Number(
-        (Number.MAX_SAFE_INTEGER - Number.MIN_SAFE_INTEGER)
-        .toExponential(0)
-        .slice(3, 5)
-        )
-        );
-*/
+//**************** Assignment 3 *************************
+`
+With just one line use MAX_SAFE_INTEGER to get the result number 16 without using any numbers
+`;
 
-//---------------exercise 18--------------------
-/* 
-    let myVar = "100.56789 Views";
+//**************** Assignment 3 Solution *************************
 
-    console.log(parseInt(myVar)); // 100
-    console.log(Number(parseFloat(myVar).toFixed(2))); // 100.57
-*/
+// console.log(
+//   Number(
+//     (Number.MAX_SAFE_INTEGER - Number.MIN_SAFE_INTEGER)
+//     .toExponential(0)
+//     .slice(3, 5)
+//     )
+//     );
 
-//---------------exercise 19--------------------
-/* 
-let num = 10;
-console.log(Number.isInteger(num) + Number.isInteger(num)); // 2 
-*/
+//**************** Assignment 4 *************************
+`
+You have the following variable whose value is 100.56789 Views
+In the first line we want to print only the number 100 from the variable and make sure its type is Number
+In the second line we want to print only the number 100.57 from the variable and make sure its type is Number
+`;
 
-//---------------exercise 20--------------------
-/* 
-let flt = 10.4;
+//**************** Assignment 4 Solution *************************
 
-console.log(Math.trunc(flt)); // 10
-console.log(Math.floor(flt)); // 10
-console.log(Number(flt.toFixed(0))); // 10
-console.log(parseInt(flt)); // 10
-console.log(Number(parseFloat(flt).toFixed(0))); // 10
-*/
+// let myVar = "100.56789 Views";
 
-//---------------exercise 21--------------------
-/* 
-    console.log(parseInt(Math.random() * 4)); // 0 || 1 || 2 || 3 || 4
-*/
+// console.log(parseInt(myVar)); // 100
+// console.log(Number(parseFloat(myVar).toFixed(2))); // 100.57
+
+//**************** Assignment 5 *************************
+`
+The next variable contains the number 10
+You should use isInteger to output output #2
+It is not allowed to write any numbers yourself, and you must use the previous feature to come up with the required result
+`;
+
+//**************** Assignment 5 Solution *************************
+
+// let num = 10;
+// console.log(Number.isInteger(num) + Number.isInteger(num)); // 2
+
+//**************** Assignment 6 *************************
+`
+  Use the following variable to come up with the result 10 in 5 different ways
+  Only the variable should be used and no numbers should be typed manually
+  None of the solutions should be repeated
+  `;
+
+//**************** Assignment 6 Solution *************************
+
+// let flt = 10.4;
+
+// console.log(Math.trunc(flt)); // 10
+// console.log(Math.floor(flt)); // 10
+// console.log(Number(flt.toFixed(0))); // 10
+// console.log(parseInt(flt)); // 10
+// console.log(Number(parseFloat(flt).toFixed(0))); // 10
+
+//**************** Assignment 7 *************************
+`
+Write a code that prints a random number between zero and 4
+`;
+
+//**************** Assignment 7 Solution *************************
+
+// console.log(parseInt(Math.random() * 4)); // 0 || 1 || 2 || 3 || 4
+
 
 //---------------exercise 22--------------------
 /* 
