@@ -1,6 +1,6 @@
-//---------------1 To 9--------------------
+//!---------------1 To 9--------------------
 /* 
-  //**************** Assignment 5  *************************
+//**************** Assignment 5  *************************
   `Print a message in console like example`;
 
   //**************** Assignment 5 Solution *************************
@@ -21,30 +21,69 @@
   document.write("Iam In Page");
   */
 
-// ---------------------exercise 7-----------------
-// let numberOne = 10;
-// let numberTwo = 20;
-// console.log(numberOne, numberTwo);
-// console.log(typeof (numberOne, numberTwo))
-// console.log(`${numberOne} ${numberTwo}`);
-// console.log(`${typeof (numberOne, numberTwo)}`);
-// console.log(" 20", "\n", "10");
-// console.log(`${numberTwo}
-// ${numberOne}`);
+//!---------------10 To 17--------------------
+/* 
+  //**************** Assignment 1  *************************
+  `
+  Create two variables named Number One and Number Two in the correct way and criteria for naming variables
+  The first variable has a value of 10 and the data type is Number
+  The second variable has a value of 20 and the data type is Number
+  On the first line, print the result 1020 in the console using the normal Concatenate method
+  In the second line, print data type 1020 in the console using the normal Concatenate method
+  In the third line, print the result 1020 in the console using Template Literals in the Concatenate work
+  In the fourth line, print the data type 1020 in the Console using the Template Literals in Concatenate work.
+  In the fifth and sixth lines, without repeating the console.log, print the number 20 and below it the number 10 using the regular Concatenate
+  In the seventh and eighth line, without repeating the console.log, print the number 20 and below it the number 10 using the Template Literals
+  `;
 
-// -------------------exercise 8--------------------
-// console.log(elzero.innerHTML); // object
-// console.log(typeof elzero); // object
+  //**************** Assignment 1 Solution *************************
 
-//----------------- exercise 9------------------
-// console.log(
-//     "\`I\'m In \n"+
-//     "\\\\ \n" +
-//     "Love \\\\ \"\"\" \'\'\' \n" +
-//     "++ with ++ \n" +
-//     "\\\"\"\"\\\"\"\"\n" +
-//     "\"\"JavaScript\"\"\`\`"
-// );
+  // let numberOne = 10;
+  // let numberTwo = 20;
+  // console.log(numberOne, numberTwo);
+  // console.log(typeof (numberOne, numberTwo));
+  // console.log(`${numberOne} ${numberTwo}`);
+  // console.log(`${typeof (numberOne, numberTwo)}`);
+  // console.log(" 20", "\n", "10");
+  // console.log(`${numberTwo}
+  // ${numberOne}`);
+
+  //**************** Assignment 2  *************************
+  `
+  The JS file must not be modified at all
+  You must not write any JavaScript code anywhere to access the required
+  You have to make this code run and output the existing result
+  `;
+
+  //**************** Assignment 2 Solution *************************
+
+  // console.log(elzero.innerHTML); // object
+  // console.log(typeof elzero); // object
+
+  //**************** Assignment 3  *************************
+  `
+  Print the following result without using the Template Literals method in Concatenate work
+  `;
+  //**************** Assignment 3 Solution *************************
+
+  //**************** Assignment 4  *************************
+  `
+  Use the variables to come up with the result in the code
+  A variable cannot be repeated more than once
+  No numbers can be written by hand and only variable values are used
+  `;
+
+  //**************** Assignment 4 Solution  *************************
+
+  // console.log(
+  //     "\`I\'m In \n"+
+  //     "\\\\ \n" +
+  //     "Love \\\\ \"\"\" \'\'\' \n" +
+  //     "++ with ++ \n" +
+  //     "\\\"\"\"\\\"\"\"\n" +
+  //     "\"\"JavaScript\"\"\`\`"
+  // );
+*/
 
 // -----------------exercise 10-----------------
 // let a = 21;
