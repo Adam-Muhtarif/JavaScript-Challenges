@@ -91,7 +91,7 @@
 // console.log(`_${a}_${b}${a}_${b}${a}_${b}${a}_${b}_`);
 // _21_2021_2021_2021_20_
 
-// ---------------------challenge 1--------------------
+//? ---------------------challenge 1--------------------
 /**  let meTitle = "Elzero",
     meDescription = "Elzero Web School",
     meDate = "25/10";
@@ -105,7 +105,7 @@
     document.write(card.repeat(4));
 */
 
-// ------------------Challenge 2---------------------------
+//? ------------------Challenge 2---------------------------
 /* 
     let a = 10;
       let b = "20";
@@ -195,64 +195,100 @@
     console.log(-d * +e ); //2000
     console.log(++g * ++e + -d + ++f); //173
 */
+//!---------------18 To 22--------------------
+/*  
+  //**************** Assignment 1  *************************
+  `
+  Replace the question mark with one of the Arithmetic Operators to get the desired result
+  Modification of numbers is not allowed
+  The required score is zero
+  `;
 
-//----------------- exercise 11-------------------------
-/* 
-    // Replace ? With Arithmetic Operators
-    // console.log(10 * 20 - 15 + 3 - 190 + 10 - 400); // 0
-*/
+  //**************** Assignment 1 Solution ************************* 
 
-//----------------- exercise 12-------------------------
+  // Replace ? With Arithmetic Operators
+  // console.log(10 * 20 - 15 + 3 - 190 + 10 - 400); // 0
+  
 
-/*  let num = 3;
+  //**************** Assignment 2  *************************
+  `
+  Use the value of the variable to get the desired result in five different ways
+  You can use everything you learned previously to come out with what you need
+    It is not allowed to use any numbers at all, and you can use the Boolean Values
+    Each method must be completely different from the other
+    The required score is number 6
+    `;
 
-    // Solution One
-    console.log(num++ + --num); // 6
+  //**************** Assignment 2 Solution *************************
 
-    // Solution Two
-    console.log(num ** num / num - num); // 6
+  //   let num = 3;
 
-    // Soultion Three
-    console.log(num + num); // 6
+  //     // Solution One
+  //     console.log(num++ + --num); // 6
 
-    // Soultion Four
-    console.log(num * num - num); // 6
+  //     // Solution Two
+  //     console.log(num ** num / num - num); // 6
 
-    // Solution Five
-    console.log((num * num * num) / num - num); // 6
+  //     // Soultion Three
+  //     console.log(num + num); // 6
 
-    // Solution Six
-    console.log((num * num * num) % ++num + --num); // 6
-*/
+  //     // Soultion Four
+  //     console.log(num * num - num); // 6
 
-//----------------- exercise 13-------------------------
+  //     // Solution Five
+  //     console.log((num * num * num) / num - num); // 6
 
-/* let num = "10";
+  //     // Solution Six
+  //     console.log((num * num * num) % ++num + --num); // 6
 
-    // Solution One
-    console.log(+num + +num); // 20
+  //**************** Assignment 3  *************************
 
-    // Solution Two
-    console.log(+num * +num / num + +num); // 20
+  `
+    Use the value of the variable to get the desired result in five different ways
+    You can use everything you learned previously to come out with what you need
+    It is not allowed to use any numbers at all
+    Each method must be completely different from the other
+    The required score is number 20
+    The resulting number must be returned as a Number, not a String
+    `;
 
-    // Solution Three
-    console.log(+num + ++num % +num + --num); // 20
+  //**************** Assignment 3 Solution *************************
 
-    // Solution Four
-    console.log(+num + ++num - num + --num ); // 20
-*/
+  //  let num = "10";
 
-//----------------- exercise 14-------------------------
-/* 
-    let points = 10;
-    // Write Your Code Here
+  //     // Solution One
+  //     console.log(+num + +num); // 20
 
-    console.log(++points + ++points - --points + ++points - --points); // 13
+  //     // Solution Two
+  //     console.log(+num * +num / num + +num); // 20
 
-    // Write Your Code Here
+  //     // Solution Three
+  //     console.log(+num + ++num % +num + --num); // 20
 
-    console.log(--points - --points + --points + --points - ++points); // 8;
-*/
+  //     // Solution Four
+  //     console.log(+num + ++num - num + --num ); // 20
+  
+
+  //**************** Assignment 4  *************************
+  `
+  You have the following variable to print the values as in the example
+  In the space provided, you can write your code to output the values correctly
+  It is forbidden to change the value of the variable, nor to write any numbers with your hand
+  `;
+
+  //**************** Assignment 4 Solution *************************
+
+  
+      // let points = 10;
+      // // Write Your Code Here
+
+      // console.log(++points + ++points - --points + ++points - --points); // 13
+
+      // // Write Your Code Here
+
+      // console.log(--points - --points + --points + --points - ++points); // 8;
+  
+  */
 
 // --------------------Challenge 4-------------
 
