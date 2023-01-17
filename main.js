@@ -654,45 +654,61 @@ if (holidays === 0) {
 
 */
 
-// start from below
-
-//---------------exercise 24--------------------
-
+//!---------------31 To 32--------------------
 /*
-  console.log(100 == "100"); // true
-  console.log(100 !== 1000); // true
-  console.log(110 !== 100 && 10 !== 20); // true
-  console.log(-10 == "-10"); // true
-  console.log(10 - 50 == +"-40"); // true
-  console.log(- 40 != -"-40"); // true
-  console.log(+"10" === 10); // true
-  console.log(!20 === false); // true
- */
+  //**************** Assignment 1  *************************
+  `
+  Put the appropriate sign from the Operators that you learned instead of the question mark so that the result is True
+  `;
 
-//---------------exercise 25--------------------
-/* 
-  let num1 = 10;
-  let num2 = 20;
+  //**************** Assignment 1 Solution *************************
 
-  console.log(num1 < num2); // true
-  console.log(num2 > num1); // true
-  console.log(num2 >= num1); // true
-  console.log(num1 <= num2); // true
-  console.log(num1 !== num2); // true
-  console.log(!num1 === !num2); // true
+  // console.log(100 == "100"); // true
+  // console.log(100 !== 1000); // true
+  // console.log(110 !== 100 && 10 !== 20); // true
+  // console.log(-10 == "-10"); // true
+  // console.log(10 - 50 == +"-40"); // true
+  // console.log(-40 != -"-40"); // true
+  // console.log(+"10" === 10); // true
+  // console.log(!20 === false); // true
+
+  //**************** Assignment 2 *************************
+  `
+  It is strictly forbidden to use any numbers
+  The variable should only be used once in each solution
+  The Operator must not be duplicated and used only once in one of the solutions
+  The minimum number of solutions is 6
+  `;
+
+  //**************** Assignment 2 Solution *************************
+
+  // let num1 = 10;
+  // let num2 = 20;
+
+  // console.log(num1 < num2); // true
+  // console.log(num2 > num1); // true
+  // console.log(num2 >= num1); // true
+  // console.log(num1 <= num2); // true
+  // console.log(num1 !== num2); // true
+  // console.log(!num1 === !num2); // true
+
+  //**************** Assignment 3 *************************
+  `
+  You have three variables with different numbers, and it is required to use the Operators that you learned instead of the question mark, so that the result appears True
+  `;
+  //**************** Assignment 3 Solution *************************
+
+  // let a = 20;
+  // let b = 30;
+  // let c = 10;
+
+  // console.log((a !== b && a > c) || a === b); // true
+  // console.log(a < b && a > c); // true
+  // console.log(!(a > b) && !(a === b) && !!(a !== c) && !(a <= c)); // true
 
 */
 
-//---------------exercise 26--------------------
-/* 
-  let a = 20;
-  let b = 30;
-  let c = 10;
-
-  console.log(a !== b && a > c || a === b); // true
-  console.log(a < b && a > c); // true
-  console.log(!(a > b) && !(a === b) && !!(a !== c) && !(a <= c)); // true
-*/
+// start from here
 
 //---------------exercise 27--------------------
 /* 
