@@ -442,6 +442,7 @@ Write a code that prints a random number between zero and 4
 
 // console.log(parseInt(Math.random() * 4)); // 0 || 1 || 2 || 3 || 4
 
+*/
 
 //---------------exercise 22--------------------
 /* 
@@ -481,7 +482,7 @@ Write a code that prints a random number between zero and 4
     document.write(outPut);
 */
 
-// --------------------Challenge 6-------------
+//? --------------------Challenge 6-------------
 /* 
 let a = 10;
 
@@ -534,7 +535,7 @@ if (st.split(" ", 1)[0].repeat(2) === "ElzeroElzero") {
 }
 */
 
-// --------------------Challenge 7-------------
+//? --------------------Challenge 7-------------
 /* 
 let job = "Manager";
 let salary = 0;
