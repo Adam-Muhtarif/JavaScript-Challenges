@@ -444,43 +444,65 @@ Write a code that prints a random number between zero and 4
 
 */
 
-//---------------exercise 22--------------------
-/* 
-    let userName = "Elzero";
-    console.log(); // e
-    console.log(); // e
-    console.log(); // e
-    console.log(); // e
-    console.log(); // eee
+//!---------------27 To 30--------------------
+/*
+  //**************** Assignment 1  *************************
 
-    let outPut = `
-            <div>${userName[0].toLowerCase()}</div>
-            <div>${userName.slice(0, 1).toLowerCase()}</div>
-            <div>${userName.substring(0,1).toLowerCase()}</div>
-            <div>${userName.substr(0,1).toLowerCase()}</div>
-            <div>${userName.charAt(0).toLowerCase().repeat(3)}</div>
-    `;
-    document.write(outPut);
+  `
+  You have a variable that contains String
+  Required to get the first character of a String
+  The solution must be implemented in 6 different ways
+  No solution should be repeated and only the variable should be used
+  Make sure that the letter is Small Letter
+  One of the solutions is to make sure that it repeats the letter taken 3 times
+  `;
+  //**************** Assignment 1 Solution *************************
+
+  // let userName = "Elzero";
+  // console.log(); // e
+  // console.log(); // e
+  // console.log(); // e
+  // console.log(); // e
+  // console.log(); // eee
+
+  // let outPut = `
+  //             <div>${userName[0].toLowerCase()}</div>
+  //             <div>${userName.slice(0, 1).toLowerCase()}</div>
+  //             <div>${userName.substring(0, 1).toLowerCase()}</div>
+  //             <div>${userName.substr(0, 1).toLowerCase()}</div>
+  //             <div>${userName.charAt(0).toLowerCase().repeat(3)}</div>
+  //     `;
+  // document.write(outPut);
+
+  //**************** Assignment 2  *************************
+  `
+  You have some variables is a word and a character set
+  In the first line, make sure that the letter Z is inside the word and that the result that will be output is true
+  In the second line, make sure that the word starts with the letter E and that the result is true
+  In the third line, make sure that the word ends in o and that the result is true
+  Note the Capital And Small case
+  Manipulating variables is not allowed
+  `;
+  //**************** Assignment 2 Solution *************************
+
+  // let word = "Elzero";
+  // let letterZ = "z";
+  // let letterE = "e";
+  // let letterO = "O";
+
+  // console.log(); // True
+  // console.log(); // True
+  // console.log(); // True
+
+  // let outPut = `
+  //             <div>${word.includes("z")}</div>
+  //             <div>${word.startsWith("E")}</div>
+  //             <div>${word.endsWith("o")}</div>
+  //     `;
+  // document.write(outPut);
+
 */
 
-//---------------exercise 23--------------------
-/* 
-    let word = "Elzero";
-    let letterZ = "z";
-    let letterE = "e";
-    let letterO = "O";
-
-    console.log(); // True
-    console.log(); // True
-    console.log(); // True
-
-    let outPut = `
-            <div>${word.includes("z")}</div>
-            <div>${word.startsWith("E")}</div>
-            <div>${word.endsWith("o")}</div>
-    `;
-    document.write(outPut);
-*/
 
 //? --------------------Challenge 6-------------
 /* 
@@ -631,6 +653,8 @@ if (holidays === 0) {
 }
 
 */
+
+// start from below
 
 //---------------exercise 24--------------------
 
