@@ -1,12 +1,25 @@
-//-------------------- exercise 5----------------------
-/*window.onload = function () {
-    console.table(["adam","ahmed","naciima","cayush"]);
-};*/
+//---------------64 To 70--------------------
+/* 
+  //**************** Assignment 5  *************************
+  `Print a message in console like example`;
 
-//------------------- exercise 6----------------
-//
-/*console.log("Iam In Console");
-document.write("Iam In Page");*/
+  //**************** Assignment 5 Solution *************************
+
+  window.onload = function () {
+    console.table(["adam", "ahmed", "naciima", "cayush"]);
+  };
+
+  //**************** Assignment 6  *************************
+  `You have the following code in the js file, you are required to cancel the execution of the code by what you have learned`;
+  `
+  It is required to carry out the task in two ways
+  You cannot delete or modify the code from the file
+  You can write before or after it without any problem
+  `;
+  
+  console.log("Iam In Console");
+  document.write("Iam In Page");
+  */
 
 // ---------------------exercise 7-----------------
 // let numberOne = 10;
