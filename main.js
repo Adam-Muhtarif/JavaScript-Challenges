@@ -708,10 +708,16 @@ if (holidays === 0) {
 
 */
 
-// start from here
+//!---------------33 To 37--------------------
+/*
+  //**************** Assignment 1 *************************
+  `
+  You have a variable that contains a number and is required to check the number and do the necessary based on the conditions
 
-//---------------exercise 27--------------------
-/* 
+    If the number is less than 10, print the number with two zeros before it
+    If the number is greater than 10 and less than 100, print the number with a zero before it
+    If the number is greater than or equal to 100, print the number as is
+
   Test Case 1
   let num = 9; // "009"
 
@@ -720,58 +726,73 @@ if (holidays === 0) {
 
   Test Case 3
   let num = 110; // "110"
+  `;
+  //**************** Assignment 1 Solution *************************
 
-  // -----------Solution-------------
+  // Case 1
+  // if (num < 10) {
+  //   console.log(`00${num}`);
+  // }
 
-  Case 1
-  if (num < 10) {
-    console.log(`00${num}`);
-  }
+  // Case 2
+  // if (num > 10 && num < 100) {
+  //   console.log(`0${num}`);
+  // }
 
-  Case 2
-  if (num > 10 && num < 100) {
-    console.log(`0${num}`);
-  }
+  // Case 3
+  // if (num >= 100) {
+  //   console.log(`${num}`);
+  // }
 
-  Case 3
-  if (num >= 100) {
-    console.log(`${num}`);
-  }
-*/
+  //**************** Assignment 2 *************************
+  `
+    You have three variables, and it is required to check the following conditions and show the message in the same form as the Output in the example
 
-//---------------exercise 28--------------------
-/*
-  let num1 = 9;
-  let str = "9";
-  let str2 = "20";
+    The first line if the value of the first variable is the same as the value of the second variable
+    The second line if the value of the first variable is the same as the value of the second variable but the type is different
+    The third line if the value of the first variable is not the same as the value of the third variable and is not the same type
+    The fourth line if the value of the second variable is not equal to the third variable but they are the same type
+    You should check the data type and value yourself because the data type and value can change
 
-  //---------------Solution---------------
- 
-  if (num1 == str) {
-    console.log(`${num1} Is The Same Value As ${str}`);
-  }
+    let num1 = 9;
+    let str = "9";
+    let str2 = "20";
 
-  if (num1 !== str) {
-    console.log(`${num1} Is The Same Value As ${str} But Not The Same Type`);
-  }
+  `;
+  //**************** Assignment 2 Solution *************************
 
-  if (num1 !== str2 && typeof num !== typeof str2) {
-    console.log(`${num1} Is Not The Same Value Or The Same Type As ${str2}`);
-  }
+  // if (num1 == str) {
+  //   console.log(`${num1} Is The Same Value As ${str}`);
+  // }
 
-  if (str !== str2 && typeof str === typeof str2) {
-    console.log(`${str} Is The Same Type As ${str2} But Not The Same Value`);
-  }
+  // if (num1 !== str) {
+  //   console.log(`${num1} Is The Same Value As ${str} But Not The Same Type`);
+  // }
 
-  // Output
-  ("{num1} Is The Same Value As {str}");
-  ("{num1} Is The Same Value As {str} But Not The Same Type");
-  ("{num1} Is Not The Same Value Or The Same Type As {str2}");
-  ("{str} Is The Same Type As {str2} But Not The Same Value");
-*/
+  // if (num1 !== str2 && typeof num !== typeof str2) {
+  //   console.log(`${num1} Is Not The Same Value Or The Same Type As ${str2}`);
+  // }
 
-//---------------exercise 29--------------------
-/* 
+  // if (str !== str2 && typeof str === typeof str2) {
+  //   console.log(`${str} Is The Same Type As ${str2} But Not The Same Value`);
+  // }
+
+  // // Output
+  // ("{num1} Is The Same Value As {str}");
+  // ("{num1} Is The Same Value As {str} But Not The Same Type");
+  // ("{num1} Is Not The Same Value Or The Same Type As {str2}");
+  // ("{str} Is The Same Type As {str2} But Not The Same Value");
+
+  //**************** Assignment 3 *************************
+  `
+    You have three variables, and it is required to check the following conditions and show the message in the same form as the Output in the example
+
+    All solutions must be done in the same If Condition
+    The first line makes sure that the third variable is greater than the first and not equal to the second in type
+    The second line makes sure that the third variable is greater than the first and equal to the second in value and not equal to the second in type
+    The third line, make sure that the value of the third variable is not equal to the first in terms of value and type, and not equal to the second in terms of type
+    You should check the data type and value yourself because the data type and value can change
+
   let num1 = 10;
   let num2 = 30;
   let num3 = "30";
@@ -780,92 +801,93 @@ if (holidays === 0) {
   ("30 Is Larger Than 10 And Type string Not The Same Type As number");
   ("30 Is Larger Than 10 And Value Is The Same As 30 And Type string Not The Same Type As number");
   ("{num3} Value And Type Is Not The Same As {num1} And Type Is Not The Same As {num2}");
+  `;
+  //**************** Assignment 3 Solution *************************
 
-  // -----------------Solution---------------
+  // if (num3 > num1 && typeof num3 !== typeof num2) {
+  //   console.log(
+  //     "30 Is Larger Than 10 And Type string Not The Same Type As number 10"
+  //   );
+  //   if (num3 > num1 && num3 == num2) {
+  //     console.log(
+  //       "30 Is Larger Than 10 And Value Is The Same As 30 And Type string Not The Same Type As number"
+  //     );
+  //   }
+  //   if (num3 !== num1 && typeof num3 !== typeof num2) {
+  //     console.log(
+  //       `${num3} Value And Type Is Not The Same As ${num1} And Type Is Not The Same As ${num2}`
+  //     );
+  //   }
+  // }
 
-  if (num3 > num1 && typeof num3 !== typeof num2) {
-    console.log(
-      "30 Is Larger Than 10 And Type string Not The Same Type As number 10"
-    );
-    if (num3 > num1 && num3 == num2) {
-      console.log(
-        "30 Is Larger Than 10 And Value Is The Same As 30 And Type string Not The Same Type As number"
-      );
-    }
-    if (num3 !==  num1 && typeof num3 !== typeof num2) {
-      console.log(
-        `${num3} Value And Type Is Not The Same As ${num1} And Type Is Not The Same As ${num2}`
-      );
-    }
-  }
+  //**************** Assignment 4 *************************
+  `
+    Change the content of the variables as appropriate so that all Conditions results in True and never modify the If Condition itself
+  `;
+  //**************** Assignment 4 Solution *************************
+
+  // let num1 = 15;
+  // let num2 = 1;
+  // let num3 = Number("15");
+  // let num4 = 50;
+
+  // // Condition 1
+
+  // if (num1 > num2) {
+  //   console.log("True");
+  // } else {
+  //   console.log("False");
+  // }
+
+  // // Condition 2
+
+  // if (num1 > num2 && num1 < num4) {
+  //   console.log("True");
+  // } else {
+  //   console.log("False");
+  // }
+
+  // // Condition 3
+
+  // if (num1 > num2 && num1 === num3) {
+  //   console.log("True");
+  // } else {
+  //   console.log("False");
+  // }
+
+  // // Condition 4
+
+  // if (num1 + num2 < num4) {
+  //   console.log("True");
+  // } else {
+  //   console.log("False");
+  // }
+
+  // // Condition 5
+
+  // if (num1 + num3 < num4) {
+  //   console.log("True");
+  // } else {
+  //   console.log("False");
+  // }
+
+  // // Condition 6
+
+  // if (num1 + num2 + num3 < num4) {
+  //   console.log("True");
+  // } else {
+  //   console.log("False");
+  // }
+
+  // // Condition 7
+
+  // if (num4 - (num1 + num3) + num2 === 21) {
+  //   console.log("True");
+  // } else {
+  //   console.log("False");
+  // }
 */
 
-//---------------exercise 30--------------------
-/*
-  // Edit What You Want Here
-
-  let num1 = 15;
-  let num2 = 1;
-  let num3 = Number("15");
-  let num4 = 50;
-
-  
-  // Condition 1
-
-  if (num1 > num2) {
-    console.log("True");
-  } else {
-    console.log("False");
-  }
-
-  // Condition 2
-
-  if (num1 > num2 && num1 < num4) {
-    console.log("True");
-  } else {
-    console.log("False");
-  }
-
-  // Condition 3
-
-  if (num1 > num2 && num1 === num3) {
-    console.log("True");
-  } else {
-    console.log("False");
-  }
-
-  // Condition 4
-
-  if ((num1 + num2) < num4) {
-    console.log("True");
-  } else {
-    console.log("False");
-  }
-
-  // Condition 5
-
-  if ((num1 + num3) < num4) {
-    console.log("True");
-  } else {
-    console.log("False");
-  }
-
-  // Condition 6
-
-  if ((num1 + num2 + num3) < num4) {
-    console.log("True");
-  } else {
-    console.log("False");
-  }
-
-  // Condition 7
-
-  if (num4 - (num1 + num3) + num2 === 21) {
-    console.log("True");
-  } else {
-    console.log("False");
-  }
-*/
 
 //---------------exercise 31--------------------
 /* 
