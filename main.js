@@ -1002,73 +1002,87 @@ if (holidays === 0) {
   // console.log("Your Code Here"); // ["Ahmed", "Elham", "Osama"];
 */
 
-// start from here
-
-//---------------exercise 26--------------------
+//!---------------48 To 53--------------------
 /* 
-  let start = 10;
-  let end = 100;
-  let exclude = 40;
+  //**************** Assignment 1 *************************
+  `
+    The use of numbers is strictly prohibited
+    The slice method is not allowed
+    You can type whatever you want outside the console to do what you want
+  `;
+  //**************** Assignment 1 Solution *************************
 
-  for (let i = start; i <= end; i += start) {
-    if (i === 40 ) {
-      continue;
-    }
-    console.log(i);
-    
-  }
+  // let start = 10;
+  // let end = 100;
+  // let exclude = 40;
 
-  // Output
-  10;
-  20;
-  30;
-  50;
-  60;
-  70;
-  80;
-  90;
-  100;
-*/
+  // for (let i = start; i <= end; i += start) {
+  //   if (i === 40) {
+  //     continue;
+  //   }
+  //   console.log(i);
+  // }
 
-//---------------exercise 27--------------------
-/* 
-  let start = 10;
-  let end = 0;
-  let stop = 3;
+  // // Output
+  // 10;
+  // 20;
+  // 30;
+  // 50;
+  // 60;
+  // 70;
+  // 80;
+  // 90;
+  // 100;
 
-  for (let i = start; i !== end; i--) {
-    if (i === start) {
-      console.log(`${i}`);
-      continue;
-    }
-    if (i !== start) console.log(`${end}${i}`);
-    if (i === 3) break;
-  }
+  //**************** Assignment 2 *************************
+  `
+    The use of numbers is strictly prohibited
+    Only one line of code must be written to output the required value
+  `;
+  //**************** Assignment 2 Solution *************************
 
-  // Output
-  10;
-  09;
-  08;
-  07;
-  06;
-  05;
-  04;
-  03;
-*/
+  // let start = 10;
+  // let end = 0;
+  // let stop = 3;
 
-//---------------exercise 28--------------------
-/* 
-  let start = 1;
-  let end = 6;
-  let breaker = 2;
+  // for (let i = start; i !== end; i--) {
+  //   if (i === start) {
+  //     console.log(`${i}`);
+  //     continue;
+  //   }
+  //   if (i !== start) console.log(`${end}${i}`);
+  //   if (i === 3) break;
+  // }
 
-  for (let i = start; i <= end; i++) {
-    console.log(i);
-    for (let k = breaker; k < end;) {
-      console.log("--", k);
-      k += breaker;
-    }
-  }
+  // // Output
+  // 10;
+  // 09;
+  // 08;
+  // 07;
+  // 06;
+  // 05;
+  // 04;
+  // 03;
+
+  //**************** Assignment 3 *************************
+  `
+    It is strictly forbidden to use numbers, and you can use the values of variables with what you have learned to implement what is required
+    The numbers should be printed as in the example
+    The Loop For must be used to do the required
+  `;
+  //**************** Assignment 3 Solution *************************
+
+  // let start = 1;
+  // let end = 6;
+  // let breaker = 2;
+
+  // for (let i = start; i <= end; i++) {
+  //   console.log(i);
+  //   for (let k = breaker; k < end; ) {
+  //     console.log("--", k);
+  //     k += breaker;
+  //   }
+  // }
 
   // Output
   // 1
@@ -1089,94 +1103,113 @@ if (holidays === 0) {
   // 6
   // -- 2
   // -- 4
-*/
 
-//---------------exercise 29--------------------
-/* 
-  let index = 10;
-  let jump = 2;
-  let end = 0;
+  //**************** Assignment 4 *************************
+  `
+    It is strictly forbidden to use numbers, and you can use the values of variables with what you have learned to implement what is required
+    The numbers should be printed as in the example
+    Write your code inside the loop only and do not modify anything else
+    The Loop For must be used to do the required
+  `;
+  //**************** Assignment 4 Solution *************************
 
-  for (let i = index; i > end; ) {
-    console.log(i);
-    i -= jump;
-    if (i === jump) break;
-  }
+  // let index = 10;
+  // let jump = 2;
+  // let end = 0;
+
+  // for (let i = index; i > end; ) {
+  //   console.log(i);
+  //   i -= jump;
+  //   if (i === jump) break;
+  // }
 
   // Output
   // 10;
   // 8;
   // 6;
   // 4;
-*/
 
-//---------------exercise 30--------------------
-/* 
-  let friends = [
-    "Ahmed",
-    "Sayed",
-    "Eman",
-    "Mahmoud",
-    "Ameer",
-    "Osama",
-    "Sameh",
-  ];
-  let letter = "a";
+  //**************** Assignment 5 *************************
+  `
+    It is absolutely forbidden to use numbers or letters, and you can use the values of variables with what you have learned to implement what is required
+    Names should be printed as in the example with a number dynamically prior to each value
+    Exclude nouns beginning with the letter A
+    The Loop For must be used to do the required
+  `;
+  //**************** Assignment 5 Solution *************************
 
-  let num = Number(Boolean(letter));
+  // let friends = ["Ahmed", "Sayed", "Eman", "Mahmoud", "Ameer", "Osama", "Sameh"];
+  // let letter = "a";
 
-  for (let i = num - num; i < friends.length; i++) {
-    if (friends[i].startsWith(letter.toUpperCase())) {
-      friends.splice(i, num);
-    }
-    console.log(`${i + num} => ${friends[i]}`);
-  }
-  
+  // let num = Number(Boolean(letter));
+
+  // for (let i = num - num; i < friends.length; i++) {
+  //   if (friends[i].startsWith(letter.toUpperCase())) {
+  //     friends.splice(i, num);
+  //   }
+  //   console.log(`${i + num} => ${friends[i]}`);
+  // }
+
   // Output
   // ("1 => Sayed");
   // ("2 => Eman");
   // ("3 => Mahmoud");
   // ("4 => Osama");
   // ("5 => Sameh");
-*/
 
-//---------------exercise 31--------------------
-/*
-let start = 0;
-let swappedName = "elZerO";
-let result = "";
+  //**************** Assignment 6 *************************
+  `
+    It is strictly forbidden to use numbers or letters, and you can use the values of variables with what you have learned to implement what is required
+    What is required by using the Loop is to convert uppercase letters to lowercase and vice versa. See example
+    The Loop For must be used to do the required
+  `;
+  //**************** Assignment 6 Solution *************************
 
-for (let i = start; i < swappedName.length; i++) {
-  if (swappedName[i] === swappedName[i].toUpperCase()) {
-    result = result.concat(swappedName[i].toLowerCase());
-  } else {
-    result = result.concat(swappedName[i].toUpperCase());
-  }
-}
-console.log(swappedName);
-console.log(result);
+  // let start = 0;
+  // let swappedName = "elZerO";
+  // let result = "";
 
-// Output
-// ("ELzERo");
- */
+  // for (let i = start; i < swappedName.length; i++) {
+  //   if (swappedName[i] === swappedName[i].toUpperCase()) {
+  //     result = result.concat(swappedName[i].toLowerCase());
+  //   } else {
+  //     result = result.concat(swappedName[i].toUpperCase());
+  //   }
+  // }
+  // console.log(swappedName);
+  // console.log(result);
 
-//---------------exercise 32--------------------
-/* 
-let start = 0;
-let mix = [1, 2, 3, "A", "B", "C", 4];
-let jump = start;
+  // Output
+  // ("ELzERo");
 
-for (let i = start; i < mix.length; i++) {
-  if (typeof mix[i] === "number") {
-    if (mix[jump] === ++start) continue;
-    console.log(mix[i]);
-  }
-  }
+  //**************** Assignment 7 *************************
+  `
+    It is strictly forbidden to use numbers, and you can use the values of variables with what you have learned to implement what is required
+    It is required to print numbers only from the beginning of the number two to the end
+    Think a little logically about how you would make the Loop ignore the number 1
+    The Loop For must be used to do the required
+  `;
+  //**************** Assignment 7 Solution *************************
+
+  // let start = 0;
+  // let mix = [1, 2, 3, "A", "B", "C", 4];
+  // let jump = start;
+
+  // for (let i = start; i < mix.length; i++) {
+  //   if (typeof mix[i] === "number") {
+  //     if (mix[jump] === ++start) continue;
+  //     console.log(mix[i]);
+  //   }
+  // }
   // Output
   // 2;
   // 3;
   // 4;
-  */
+
+*/
+
+// start from here
+
 //---------------exercise 33--------------------
 /* 
   let friends = [
