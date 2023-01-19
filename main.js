@@ -1605,168 +1605,174 @@ if (holidays === 0) {
   document.write(calc(10, 50, 20)); //80
 */
 
-// start from  here
-
-//---------------exercise 39--------------------
+//!---------------64 To 70--------------------
 /*
+  //**************** Assignment 1 *************************
+  `
+    Create a function called getDetails that accepts three parameters: zName, zAge, zCountry
+    The Function will contain four sub-functions with the following names namePattern, ageWithMessage, countryTwoLetters, fullDetails
+    The namePattern accepts the name from you, consisting of two syllables like this, Osama Mohamed, and returns the name like this, Osama M. Watch the example for more understanding
+    ageWithMessage accepts a message from you in which the age extracts only the age from it and changes the message. Watch the example to understand
+    countryTwoLetters accepts the country name from you and returns a message with the first two letters of the country name in capital letters. Watch the example to understand
+    fullDetails It combines all the previous functions to give you the full message as in the example
+    The name of the second person whose first letter can be Capital or Small
+    The age message can change, but the number will always be in the foreground and will not change its position
+    Comments will explain what you need in detail
+  `;
+  //**************** Assignment 1 Solution *************************
 
-  function getDetails(zName, zAge, zCountry) {
-    function namePattern(zName) {
-      // Osama Mohamed => Osama M.
-      return zName.substring(0, 6) + zName.substring(6, 7).toUpperCase() + ".";
-    }
-    function ageWithMessage(zAge) {
-      // 38 Is My Age => Your Age Is 38
-      return `, Your Age Is ` + zAge.substring(0, 2);
-    }
-    function countryTwoLetters(zCountry) {
-      // Egypt => You Live In EG
-      return `, You Live in ` + zCountry.substring(0, 2).toUpperCase();
-    }
-    function fullDetails() {
-      return (
-        `Hello ` +
-        namePattern(zName) +
-        ageWithMessage(zAge) +
-        countryTwoLetters(zCountry)
-      );
-    }
-    return fullDetails(); // Do Not Edit This
-  }
+  // function getDetails(zName, zAge, zCountry) {
+  //   function namePattern(zName) {
+  //     // Osama Mohamed => Osama M.
+  //     return zName.substring(0, 6) + zName.substring(6, 7).toUpperCase() + ".";
+  //   }
+  //   function ageWithMessage(zAge) {
+  //     // 38 Is My Age => Your Age Is 38
+  //     return `, Your Age Is ` + zAge.substring(0, 2);
+  //   }
+  //   function countryTwoLetters(zCountry) {
+  //     // Egypt => You Live In EG
+  //     return `, You Live in ` + zCountry.substring(0, 2).toUpperCase();
+  //   }
+  //   function fullDetails() {
+  //     return (
+  //       `Hello ` +
+  //       namePattern(zName) +
+  //       ageWithMessage(zAge) +
+  //       countryTwoLetters(zCountry)
+  //     );
+  //   }
+  //   return fullDetails(); // Do Not Edit This
+  // }
 
-  document.write(getDetails("Osama Mohamed", "38 Is My Age", "Egypt"));
+  // document.write(getDetails("Osama Mohamed", "38 Is My Age", "Egypt"));
   // Hello Osama M., Your Age Is 38, You Live In EG
 
   // document.write(getDetails("Ahmed ali", "32 Is The Age", "Syria"));
   // Hello Ahmed A., Your Age Is 32, You Live In SY
-*/
 
-//---------------64 To 70--------------------
-/* 
-//**************** Assignment 2 ********************
+  //**************** Assignment 2 ********************
   `# Change These Two Functions To Arrow Function`;
 
   `# Function 1`;
-  function itsMe() {
-    return `Iam A Normal Function`;
-  }
+  // function itsMe() {
+  //   return `Iam A Normal Function`;
+  // }
 
   `# Function 2`;
-  function urlCreate(protocol, web, tld) {
-    return `${protocol}://www.${web}.${tld}`;
-  }
+  // function urlCreate(protocol, web, tld) {
+  //   return `${protocol}://www.${web}.${tld}`;
+  // }
 
-  console.log(itsMe()); // Iam A Normal Function
-  console.log(urlCreate("https", "elzero", "org")); // https://www.elzero.org
-  
+  // console.log(itsMe()); // Iam A Normal Function
+  // console.log(urlCreate("https", "elzero", "org")); // https://www.elzero.org
+
   //**************** Assignment 2 Solution ***************
-  
+
   // `# Function 1`;
   // itsMe = () => ` Iam A Arrow Function`;
   // document.write(`<div>${itsMe()}</div>`);
-  
+
   // `# Function 2`;
   // urlCreate = (protocol, web, tld) => `${protocol}://www.${web}.${tld}`;
   // document.write(`<div>${urlCreate("https", "elzero", "org")}</div>`); // Iam A Normal Function
-  
-  
 
-//**************** Assignment 3 *************************
-`Change This Regular Function To Arrow Function`;
+  //**************** Assignment 3 *************************
+  `Change This Regular Function To Arrow Function`;
 
-function checker(zName) {
-  return function (status) {
-    return function (salary) {
-      return status === "Available"
-        ? `${zName}, My Salary Is ${salary}`
-        : `Iam Not Available`;
-    };
-  };
-}
+  // function checker(zName) {
+  //   return function (status) {
+  //     return function (salary) {
+  //       return status === "Available"
+  //         ? `${zName}, My Salary Is ${salary}`
+  //         : `Iam Not Available`;
+  //     };
+  //   };
+  // }
 
-// document.write(checker("Osama")("Available")(4000)); // Osama, My Salary Is 4000
-// console.log(checker("Ahmed")("Not Available")()); // Iam Not Avaialble
+  // document.write(checker("Osama")("Available")(4000)); // Osama, My Salary Is 4000
+  // console.log(checker("Ahmed")("Not Available")()); // Iam Not Avaialble
 
-//**************** Assignment 3 Solution *************************
+  //**************** Assignment 3 Solution *************************
 
-checker2 = (zName) => (status) => (salary) =>
-status === "Available"
-    ? `${zName}, My Salary Is ${salary}`
-    : `Iam Not Available`;
+  // checker2 = (zName) => (status) => (salary) =>
+  // status === "Available"
+  //     ? `${zName}, My Salary Is ${salary}`
+  //     : `Iam Not Available`;
 
-document.write(checker2("Adam")("Available")(9000));
+  // document.write(checker2("Adam")("Available")(9000));
 
+  //**************** Assignment 4  *************************
+
+  // function specialMix(...data) {
+  //   // Your Code Here
+  // }
+
+  // console.log(specialMix(10, 20, 30)); // 60
+  // console.log(specialMix("10Test", "Testing", "20Cool")); // 30
+  // console.log(specialMix("Testing", "10Testing", "40Cool")); // 50
+  // console.log(specialMix("Test", "Cool", "Test")); // All Is Strings
+
+  //**************** Assignment 4 Solution *************************
+
+  // function specialMix(...data) {
+  //   let result = 0;
+  //   let number;
+  //   let arrayOfNumbers = [];
+
+  //   function check(data) {
+  //     for (let i = 0; i < data.length; i++) {
+  //       if (typeof data[i] === "number") {
+  //         arrayOfNumbers.push(data[i]);
+  //       }
+
+  //       if (typeof data[i] === "string") {
+  //         number = data[i].match(/\d+/g);
+  //         if (number === null) {
+  //           continue;
+  //         } else arrayOfNumbers.push(parseFloat(number));
+  //       }
+  //     }
+  //     return sum(arrayOfNumbers);
+  //   }
+
+  //   function sum(arrayOfNumbers) {
+  //     for (let i = 0; i < arrayOfNumbers.length; i++) {
+  //       result += arrayOfNumbers[i];
+  //     }
+  //     return result === 0 ? `All Is String` : `Result Is = ${result}`;
+  //   }
+
+  //   return check(data);
+  // }
+
+  // document.write(specialMix(10, 20, 30)); //60
+  // document.write(specialMix("10Test", "Testing", "20Cool")); // 30
+  // document.write(specialMix("Testing", "10Testing", "40Cool")); // 50
+  // document.write(specialMix("Test", "Cool", "Test")); // All Is Strings
+
+  //**************** New Information  *************************
+
+  // !To eliminate numbers from a string we use this method below
+  // ------------word = word.replace(/\d+/g, "");------------
+  // "\d" => Decimals 0-9 we can replace "\d" with "[0-9]" => the same results
+  // "\D" => Removes the string and keep the numbers
+  // "^[0-9]"  => It means remove everything upper than d or 0-9
+  // "g"   => Global
+  // ""   => Is what eliminates the numbers with making it empty string
+
+  // let word = "111adam222";
+  // document.write(`Before Eliminate  ${word}`);
+  // word = word.replace(/\d+/g, "");
+  // document.write(`</br> After Eliminate  ${word}`);
+
+  // !To Extract numbers from a string we use this method below
+  // ------------let numbers = word.match(/\d+/g)---------;
+
+  // They export numbers by finding them
+
+  // let numbers = word.match(/\d+/g);
+  // document.write(`</br> After Eliminate  ${numbers}`);
 */
 
-//**************** Assignment 4  *************************
-/*
-  function specialMix(...data) {
-    // Your Code Here
-  }
 
-  console.log(specialMix(10, 20, 30)); // 60
-  console.log(specialMix("10Test", "Testing", "20Cool")); // 30
-  console.log(specialMix("Testing", "10Testing", "40Cool")); // 50
-  console.log(specialMix("Test", "Cool", "Test")); // All Is Strings
-*/
-//**************** Assignment 4 Solution *************************
-/* 
-function specialMix(...data) {
-  let result = 0;
-  let number;
-  let arrayOfNumbers = [];
-
-  function check(data) {
-    for (let i = 0; i < data.length; i++) {
-      if (typeof data[i] === "number") {
-        arrayOfNumbers.push(data[i]);
-      }
-
-      if (typeof data[i] === "string") {
-        number = data[i].match(/\d+/g);
-        if (number === null) {
-          continue;
-        } else arrayOfNumbers.push(parseFloat(number));
-      }
-    }
-    return sum(arrayOfNumbers);
-  }
-
-  function sum(arrayOfNumbers) {
-    for (let i = 0; i < arrayOfNumbers.length; i++) {
-      result += arrayOfNumbers[i];
-    }
-    return result === 0 ? `All Is String` : `Result Is = ${result}`;
-  }
-
-  return check(data);
-}
-
-// document.write(specialMix(10, 20, 30)); //60
-// document.write(specialMix("10Test", "Testing", "20Cool")); // 30
-// document.write(specialMix("Testing", "10Testing", "40Cool")); // 50
-// document.write(specialMix("Test", "Cool", "Test")); // All Is Strings
-
-//**************** New Information  *************************
-
-  !To eliminate numbers from a string we use this method below
-  ------------word = word.replace(/\d+/g, "");------------
-  "\d" => Decimals 0-9 we can replace "\d" with "[0-9]" => the same results
-  "\D" => Removes the string and keep the numbers
-  "^[0-9]"  => It means remove everything upper than d or 0-9
-  "g"   => Global
-  ""   => Is what eliminates the numbers with making it empty string
-  
-// let word = "111adam222";
-// document.write(`Before Eliminate  ${word}`);
-// word = word.replace(/\d+/g, "");
-// document.write(`</br> After Eliminate  ${word}`);
-
-// !To Extract numbers from a string we use this method below
-// ------------let numbers = word.match(/\d+/g)---------;
-
-// They export numbers by finding them
-
-// let numbers = word.match(/\d+/g);
-// document.write(`</br> After Eliminate  ${numbers}`);
-*/
