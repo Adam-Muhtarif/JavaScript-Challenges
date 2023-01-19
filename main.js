@@ -1378,173 +1378,203 @@ if (holidays === 0) {
   showDetails(true, "Osama", 38);
 */
 
-// start from here
+//!---------------57 To 63--------------------
+/*
+  //**************** Assignment 1 *************************
+  `
+    Create a Function that displays a welcome message to everyone with any name you want
+    The Function accepts two Parameters, which are the name of the person and the gender, whether male or female
+    Print a welcome message for the person with his name and before the name Mr or Miss based on the type of person, whether male or female
+    If the person does not write his gender and prefers not to mention it, do not print Mr or Miss, and print only the welcome message
+  `;
+  //**************** Assignment 1 Solution *************************
 
-//---------------exercise 34--------------------
-/* 
+  // function sayHello(theName = "Unknown", theGender = "Unknown") {
+  //-------------Solution 1---------------
 
-  function sayHello(theName = "Unknown", theGender = "Unknown") {
-    //-------------Solution 1---------------
-    
-    // document.write(`<div>`);
-    // document.write(`Hello `);
-    // theGender === "Male"
-    //   ? document.write(`Mr `)
-    //   : theGender === "Female"
-    //   ? document.write(`Miss `)
-    //   : "";
-    // document.write(`${theName} `);
-    // document.write(`</div>`);
+  // document.write(`<div>`);
+  // document.write(`Hello `);
+  // theGender === "Male"
+  //   ? document.write(`Mr `)
+  //   : theGender === "Female"
+  //   ? document.write(`Miss `)
+  //   : "";
+  // document.write(`${theName} `);
+  // document.write(`</div>`);
 
-    //-------------Solution 2 Using Return---------------
+  //-------------Solution 2 Using Return---------------
 
-    return document.write(`
-    <div>
-      Hello
-      ${theGender === "Male" ? `Mr` : theGender === "Female" ? `Miss` : ""}
-      ${theName}
-    </div>
-    `);
-  }
+  //   return document.write(`
+  //     <div>
+  //       Hello
+  //       ${theGender === "Male" ? `Mr` : theGender === "Female" ? `Miss` : ""}
+  //       ${theName}
+  //     </div>
+  //     `);
+  // }
 
-  // Needed Output
-  sayHello("Osama", "Male"); // "Hello Mr Osama"
-  sayHello("Eman", "Female"); // "Hello Miss Eman"
-  sayHello("Sameh"); // "Hello Sameh"
-*/
+  // // Needed Output
+  // sayHello("Osama", "Male"); // "Hello Mr Osama"
+  // sayHello("Eman", "Female"); // "Hello Miss Eman"
+  // sayHello("Sameh"); // "Hello Sameh"
 
-//---------------exercise 35--------------------
-/* 
-  function calculate(firstNum, secondNum, operation) {
-    let result = 0;
-    if (!secondNum) {
-      return document.write(`
-          <div>
-            Second Number Not Found
-          </div>
-          `);
-    } else {
-      if (!operation) {
-        document.write(`
-          <div>
-            ${firstNum + secondNum}
-          </div>
-        `);
-      } else {
-        operation === "add"
-          ? (result = firstNum + secondNum)
-          : operation === "subtract"
-          ? (result = firstNum - secondNum)
-          : operation === "multiply"
-          ? (result = firstNum * secondNum)
-          : "";
-        return document.write(`
-          <div>
-            ${result}
-          </div>
-        `);
-      }
-    }
-  }
+  //**************** Assignment 2 *************************
+  `
+    Create a Function that performs various arithmetic operations
+    The Function accepts three parameters, the first and second numbers, and the type of the arithmetic operation
+    The Function performs the arithmetic operation that you write on the two numbers, and it contains only 3 operations ( add | subtract | multiply )
+    If the type of arithmetic operation is not written, add the two numbers
+    In case only one number is written inside the Function, show a message in the console stating that the second number does not exist
+  `;
+  //**************** Assignment 2 Solution *************************
 
-  // Needed Output
-  calculate(20); // Second Number Not Found
-  calculate(20, 30); // 50
-  calculate(20, 30, 'add'); // 50
-  calculate(20, 30, 'subtract'); // -10
-  calculate(20, 30, "multiply"); // 600
-*/
+  // function calculate(firstNum, secondNum, operation) {
+  //   let result = 0;
+  //   if (!secondNum) {
+  //     return document.write(`
+  //           <div>
+  //             Second Number Not Found
+  //           </div>
+  //           `);
+  //   } else {
+  //     if (!operation) {
+  //       document.write(`
+  //           <div>
+  //             ${firstNum + secondNum}
+  //           </div>
+  //         `);
+  //     } else {
+  //       operation === "add"
+  //         ? (result = firstNum + secondNum)
+  //         : operation === "subtract"
+  //         ? (result = firstNum - secondNum)
+  //         : operation === "multiply"
+  //         ? (result = firstNum * secondNum)
+  //         : "";
+  //       return document.write(`
+  //           <div>
+  //             ${result}
+  //           </div>
+  //         `);
+  //     }
+  //   }
+  // }
 
-//---------------exercise 36--------------------
-/* 
-  function ageInTime(theAge) {
-    let year = 365; //days
-    let month = 30.4167; //days
-    let week = 7; //days
-    let day = 24; //hours
-    let hour = 60; //minute
-    let minute = 60; //seconds
-    let second = 60; //ms
+  // // Needed Output
+  // calculate(20); // Second Number Not Found
+  // calculate(20, 30); // 50
+  // calculate(20, 30, "add"); // 50
+  // calculate(20, 30, "subtract"); // -10
+  // calculate(20, 30, "multiply"); // 600
 
-    if (theAge < 0 || theAge > 100) {
-      document.write(`<p>Age Out Of Range</p>`);
-    } else {
-      document.write(`<p>${theAge} Years</p>`);
-      document.write(`<p>${Math.ceil((theAge * year) / month)} Months</p>`);
-      document.write(`<p>${((theAge * year) / week).toFixed(4)} Weeks</p>`);
-      document.write(`<p>${theAge * year} Days</p>`);
-      document.write(`<p>${theAge * year * day} Hours</p>`);
-      document.write(`<p>${theAge * year * day * minute} Minutes</p>`);
-      document.write(`<p>${theAge * year * day * minute * second} Seconds</p>`);
-    }
-  }
+  //**************** Assignment 3 *************************
+  `
+    Create a Function that calculates your age in all units of time
+    The Function accepts only one parameter, your age in years
+    It is required to print your age in months, weeks, days, hours, minutes and seconds
+    It is required to print each unit of time on a separate line in the console
+    You must ensure that the age is greater than 10 and less than 100, otherwise print a message stating that the age is out of range.
+  `;
+  //**************** Assignment 3 Solution *************************
+
+  // function ageInTime(theAge) {
+  //   let year = 365; //days
+  //   let month = 30.4167; //days
+  //   let week = 7; //days
+  //   let day = 24; //hours
+  //   let hour = 60; //minute
+  //   let minute = 60; //seconds
+  //   let second = 60; //ms
+
+  //   if (theAge < 0 || theAge > 100) {
+  //     document.write(`<p>Age Out Of Range</p>`);
+  //   } else {
+  //     document.write(`<p>${theAge} Years</p>`);
+  //     document.write(`<p>${Math.ceil((theAge * year) / month)} Months</p>`);
+  //     document.write(`<p>${((theAge * year) / week).toFixed(4)} Weeks</p>`);
+  //     document.write(`<p>${theAge * year} Days</p>`);
+  //     document.write(`<p>${theAge * year * day} Hours</p>`);
+  //     document.write(`<p>${theAge * year * day * minute} Minutes</p>`);
+  //     document.write(`<p>${theAge * year * day * minute * second} Seconds</p>`);
+  //   }
+  // }
 
   // Needed Output
   // ageInTime(110); // Age Out Of Range
-  ageInTime(5); // Months Example => 456 Months
+  // ageInTime(5); // Months Example => 456 Months
   // ageInTime(9); // Months Example => 456 Months
+
+  //**************** Assignment 4 *************************
+  `
+    Create a Function that creates a Select Box in the HTML page
+    The Function accepts two parameters from you, the first is the start year and the second is the end year
+    Create a Select Box containing Options for each one of them year to end
+    See the example to see what is required
+  `;
+  //**************** Assignment 4 Solution *************************
+
+  // function createSelectBox(startYear, endYear) {
+  //   document.write(`<select>`);
+  //   for (let i = startYear; i <= endYear; i++) {
+  //     document.write(`<option value = "${i}">${i}</option>`);
+  //   }
+  //   document.write(`</select>`);
+  // }
+  // createSelectBox(2000, 2021);
+
+  // <select>
+  //   <option value="2000">2000</option>
+  //   <option value="2001">2001</option>
+  //   <option value="2002">2002</option>
+  //   <option value="2003">2003</option>
+  //   <option value="2004">2004</option>
+  //   <option value="2005">2005</option>
+  //   <option value="2006">2006</option>
+  //   <option value="2007">2007</option>
+  //   <option value="2008">2008</option>
+  //   <option value="2009">2009</option>
+  //   <option value="2010">2010</option>
+  //   <option value="2011">2011</option>
+  //   <option value="2012">2012</option>
+  //   <option value="2013">2013</option>
+  //   <option value="2014">2014</option>
+  //   <option value="2015">2015</option>
+  //   <option value="2016">2016</option>
+  //   <option value="2017">2017</option>
+  //   <option value="2018">2018</option>
+  //   <option value="2019">2019</option>
+  //   <option value="2020">2020</option>
+  //   <option value="2021">2021</option>
+  // </select>;
+  //**************** Assignment 5 *************************
+  `
+    Create a Function that multiplies all the numbers you pass to it
+    It is not known how many parameters you will pass to the Function
+    If the Argument used in the Function is a String, do not use it with numbers
+    If the Argument is a Float, convert it to an Integer before multiplication begins
+  `;
+
+  //**************** Assignment 5 Solution *************************
+
+  // function multiply(...numbers) {
+  //   let result = 1;
+  //   for (let i = 0; i < numbers.length; i++) {
+  //     if (typeof numbers[i] === "string") {
+  //       continue;
+  //     } else {
+  //       numbers[i] = Math.trunc(numbers[i]);
+  //       result *= numbers[i];
+  //     }
+  //   }
+  //   return document.write(`<div>${result}</div>`);
+  // }
+
+  // multiply(10, 20); // 200
+  // multiply("A", 10, 30); // 300
+  // multiply(100.5, 10, "B"); // /1000
 */
 
-//---------------exercise 37--------------------
-/* 
-  function createSelectBox(startYear, endYear) {
-    document.write(`<select>`);
-    for (let i = startYear; i <= endYear; i++) {
-      document.write(`<option value = "${i}">${i}</option>`);
-    }
-    document.write(`</select>`);
-  }
-  createSelectBox(2000, 2021);
-  
-  <select>
-    <option value="2000">2000</option>
-    <option value="2001">2001</option>
-    <option value="2002">2002</option>
-    <option value="2003">2003</option>
-    <option value="2004">2004</option>
-    <option value="2005">2005</option>
-    <option value="2006">2006</option>
-    <option value="2007">2007</option>
-    <option value="2008">2008</option>
-    <option value="2009">2009</option>
-    <option value="2010">2010</option>
-    <option value="2011">2011</option>
-    <option value="2012">2012</option>
-    <option value="2013">2013</option>
-    <option value="2014">2014</option>
-    <option value="2015">2015</option>
-    <option value="2016">2016</option>
-    <option value="2017">2017</option>
-    <option value="2018">2018</option>
-    <option value="2019">2019</option>
-    <option value="2020">2020</option>
-    <option value="2021">2021</option>
-  </select>;
-*/
-
-//---------------exercise 38--------------------
-/* 
-  function multiply(...numbers) {
-    let result = 1;
-    for (let i = 0; i < numbers.length; i++) {
-      if (typeof numbers[i] === "string") {
-        continue;
-      } else {
-        numbers[i] = Math.trunc(numbers[i]);
-        result *= numbers[i];
-      }
-    }
-    return document.write(`<div>${result}</div>`);
-  }
-
-  multiply(10, 20); // 200
-  multiply("A", 10, 30); // 300
-  multiply(100.5, 10, "B"); // /1000
-*/
-
-// ------------ Challenge 10 ---------------------
-
-// ***************** Challenge 11 ********************
+//? ------------ Challenge 11 ---------------------
 /* 
   // ------------ Regular Function ---------------------
 
@@ -1574,6 +1604,8 @@ if (holidays === 0) {
   };
   document.write(calc(10, 50, 20)); //80
 */
+
+// start from  here
 
 //---------------exercise 39--------------------
 /*
