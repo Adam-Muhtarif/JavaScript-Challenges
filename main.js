@@ -1208,61 +1208,68 @@ if (holidays === 0) {
 
 */
 
-// start from here
+//!---------------54 To 56--------------------
+/*
+  //**************** Assignment 1 *************************
+  `
+    It is strictly forbidden to use numbers, and you can use the values of variables with what you have learned to implement what is required
+    Numbers and names beginning with the letter A must not be printed
+    The Loop While must be used to do the required
+  `;
+  //**************** Assignment 1 Solution *************************
 
-//---------------exercise 33--------------------
-/* 
-  let friends = [
-    "Fahad",
-    "Adam",
-    "Ahmed",
-    "Sayed",
-    "Ali",
-    1,
-    2,
-    "Mahmoud",
-    "Amany",
-    3,
-    4,
-  ];
+  // let friends = [
+  //   "Fahad",
+  //   "Adam",
+  //   "Ahmed",
+  //   "Sayed",
+  //   "Ali",
+  //   1,
+  //   2,
+  //   "Mahmoud",
+  //   "Amany",
+  //   3,
+  //   4,
+  // ];
 
-  let index = 0;
-  let counter = 0;
-  ++counter;
+  // let index = 0;
+  // let counter = 0;
+  // ++counter;
 
-  // Letters that begin with 👇A👇 will deleted from the array
-  let letter = "A";
+  // // Letters that begin with 👇A👇 will deleted from the array
+  // let letter = "A";
 
-  // Filter Loop
-  while (index < friends.length) {
-    if (typeof friends[index] === "number") {
-      friends.splice(index, counter);
-      index--;
-    } else {
-      if (friends[index].startsWith(letter)) {
-        friends.splice(index, counter);
-        index--;
-      }
-    }
+  // // Filter Loop
+  // while (index < friends.length) {
+  //   if (typeof friends[index] === "number") {
+  //     friends.splice(index, counter);
+  //     index--;
+  //   } else {
+  //     if (friends[index].startsWith(letter)) {
+  //       friends.splice(index, counter);
+  //       index--;
+  //     }
+  //   }
 
-    index++;
-  }
+  //   index++;
+  // }
 
-  // Display Output
-  for (let i = --counter; i < friends.length; i++) {
-    console.log(`${i + counter} => ${friends[i]}`);
-  }
+  // // Display Output
+  // for (let i = --counter; i < friends.length; i++) {
+  //   console.log(`${i + counter} => ${friends[i]}`);
+  // }
 
-  // Output
-  ("1 => Fahad");
-  ("2 => Sayed");
-  ("3 => Mahmoud");
+  // // Output
+  // ("1 => Fahad");
+  // ("2 => Sayed");
+  // ("3 => Mahmoud");
 
+  // ("(☞ﾟヮﾟ)☞ Adam Muhtarif");
 
-  ("(☞ﾟヮﾟ)☞ Adam Muhtarif")
 */
 
-// --------------------Challenge 9-------------
+
+//? --------------------Challenge 9-------------
 /* 
   let myAdmins = ["Ahmed", "Osama", "Sayed", "lowerCase", "Stop", "Samera"];
   let myEmployees = [
@@ -1329,7 +1336,7 @@ if (holidays === 0) {
   document.write(`<h1>💻⌨ Adam Muhtarif</h1>`);
 */
 
-// ------------ Challenge 10 ---------------------
+//? ------------ Challenge 10 ---------------------
 /* 
   function showDetails(name, age, status) {
     //* for swap between parameters
@@ -1370,6 +1377,8 @@ if (holidays === 0) {
   showDetails(false, 38, "Osama");
   showDetails(true, "Osama", 38);
 */
+
+// start from here
 
 //---------------exercise 34--------------------
 /* 
