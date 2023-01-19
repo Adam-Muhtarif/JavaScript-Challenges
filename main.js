@@ -889,8 +889,22 @@ if (holidays === 0) {
 */
 
 
-//---------------exercise 31--------------------
-/* 
+//!---------------38 To 39--------------------
+
+//**************** Assignment 1 *************************
+`
+  You have a variable that contains the day of the appointment, and by means of the Switch, show a message to the person according to the chosen day, with the following conditions:
+
+  It must be ensured that the name of the day does not have any spaces before or after it, and the first letter is Capital, even if the name is written in lowercase letters
+  If the value of the variable is Friday, Saturday, or Sunday, it shows that there are no available appointments on these days
+  If the value of the variable is Monday or Thursday, the available appointments are from ten in the morning until five in the evening
+  If the value of the variable is on Tuesday, the available appointments will be from ten in the morning until six in the evening
+  If the value of the variable is Wednesday, the available appointments are from ten in the morning until seven in the evening
+  If the value of the variable is an invalid day, a message appears that the day is in error
+`;
+//**************** Assignment 1 Solution *************************
+
+/*
   // let day = "   friday  ";
   // You Need To Remove Spaces And Make First Letter Capital => Friday
 
@@ -912,32 +926,33 @@ if (holidays === 0) {
   // let day = "World";
   // Output => "Its Not A Valid Day"
 
-  let day = "    Friday    ";
-  day = day.trim().charAt(0).toUpperCase().concat(day.trim().substring(1));
-  console.log(day);
+  // let day = "    Friday    ";
+  // day = day.trim().charAt(0).toUpperCase().concat(day.trim().substring(1));
+  // console.log(day);
 
-  switch (day) {
-    case (day = "Friday"):
-    case (day = "Saturday"):
-    case (day = "Sunday"):
-      console.log("No Appointments Available");
-      break;
-    case (day = "Monday"):
-    case (day = "Thursday"):
-      console.log("From 10:00 AM To 5:00 PM");
-      break;
-    case (day = "Tuesday"):
-      console.log("From 10:00 AM To 6:00 PM");
-      break;
-    case (day = "Wednesday"):
-      console.log("From 10:00 AM To 7:00 PM");
-      break;
-    default:
-      console.log("Its Not A Valid Day");
-  }
+  // switch (day) {
+  //   case (day = "Friday"):
+  //   case (day = "Saturday"):
+  //   case (day = "Sunday"):
+  //     console.log("No Appointments Available");
+  //     break;
+  //   case (day = "Monday"):
+  //   case (day = "Thursday"):
+  //     console.log("From 10:00 AM To 5:00 PM");
+  //     break;
+  //   case (day = "Tuesday"):
+  //     console.log("From 10:00 AM To 6:00 PM");
+  //     break;
+  //   case (day = "Wednesday"):
+  //     console.log("From 10:00 AM To 7:00 PM");
+  //     break;
+  //   default:
+  //     console.log("Its Not A Valid Day");
+  // }
 */
 
-// --------------------Challenge 8-------------
+
+//? --------------------Challenge 8-------------
 /* 
   let zero = 0;
   let counter = 3;
@@ -966,6 +981,8 @@ if (holidays === 0) {
   // my.splice(zero, 1, '"rO"');
   // console.log(my[zero]); // "rO"
 */
+
+// start from here
 
 //---------------exercise 25--------------------
 /*
