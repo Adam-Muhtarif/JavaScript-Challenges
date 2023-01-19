@@ -982,19 +982,27 @@ if (holidays === 0) {
   // console.log(my[zero]); // "rO"
 */
 
+//!---------------40 To 47--------------------
+/* 
+  //**************** Assignment 1 *************************
+  `
+    It is strictly forbidden to use numbers, and you can use the values of variables with what you have learned to implement what is required
+    The solution and the required must be done in two different ways
+    You can type whatever you want outside the console to do what you want
+  `;
+  //**************** Assignment 1 Solution *************************
+
+  // let myFriends = ["Ahmed", "Elham", "Osama", "Gamal"];
+  // let num = 3;
+
+  // // Method 1
+  // console.log("Your Code Here"); // ["Ahmed", "Elham", "Osama"];
+
+  // // Method 2
+  // console.log("Your Code Here"); // ["Ahmed", "Elham", "Osama"];
+*/
+
 // start from here
-
-//---------------exercise 25--------------------
-/*
-let myFriends = ["Ahmed", "Elham", "Osama", "Gamal"];
-let num = 3;
-
-// Method 1
-console.log("Your Code Here"); // ["Ahmed", "Elham", "Osama"];
-
-  // Method 2
-  console.log("Your Code Here"); // ["Ahmed", "Elham", "Osama"];
- */
 
 //---------------exercise 26--------------------
 /* 
