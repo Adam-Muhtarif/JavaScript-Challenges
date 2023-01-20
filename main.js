@@ -1775,4 +1775,22 @@ if (holidays === 0) {
   // document.write(`</br> After Eliminate  ${numbers}`);
 */
 
+//? ------------ Challenge 12 ---------------------
+/* 
+  let myString = "1,2,3,EE,l,z,e,r,o,_,W,e,b,_,S,c,h,o,o,l,2,0,Z";
 
+  let result = myString
+    .split("")
+    .filter(function (element) {
+      return !isNaN(parseInt(element)) || element === "," ? "" : element;
+    })
+    .map(function (element) {
+      return element === "_" ? " " : element;
+    })
+    .reduce(function (prev, current) {
+      return `${prev === current ? prev : prev + current}`;
+    })
+    .slice(false, -true);
+
+  console.log(result);
+*/
