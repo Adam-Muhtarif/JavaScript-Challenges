@@ -1794,3 +1794,101 @@ if (holidays === 0) {
 
   console.log(result);
 */
+
+//!---------------64 To 70--------------------
+/* 
+//**************** Assignment 1 *************************
+  `  
+    You have a variable named mix that contains Letters And Numbers
+    Create a new Array with the Map
+    You must completely exclude numbers from the result
+    You must Concatenate Letters to get the result
+    You must use the Map + Reduce with what you have learned to produce the desired result
+    It is forbidden to use Join or Filter
+  `;
+  //**************** Assignment 1 Solution *************************
+  // let mix = [1, 2, 3, "E", 4, "l", "z", "e", "r", 5, "o"];
+
+  // let result = mix
+  //   .map((ele) => (isNaN(ele) ? ele : ""))
+  //   .reduce((prev, current) => `${prev}${current}`);
+
+  // console.log(result);
+  // Elzero
+
+  //**************** Assignment 2 *************************
+  `
+    You have a variable named myString that contains Letters, both repeated and regular
+    Create a new Array with the Filter
+    You must completely exclude the repeated letters from the result
+    You must Concatenate Letters to get the result
+  `;
+  //**************** Assignment 2 Solution *************************
+  // let myString = "EElllzzzzzzzeroo";
+
+  // let result = myString.split("").filter(function (ele, i) {
+  //   return myString[i + 1] === ele ? "" : ele;
+  // });
+  // console.log(result.join(""));
+
+  // Elzero
+
+
+  //**************** Assignment 3 *************************
+  `
+    You have a variable named numsAndStrings that contains Letters And Numbers
+    Create a new Array with Filter + Map
+    You must exclude Letters from the result
+    You have to reverse the numbers meaning positive is negative and negative is positive
+    You must use the Map + Filter + whatever you want
+  `;
+  //**************** Assignment 3 Solution *************************
+
+  // let numsAndStrings = [1, 10, -10, -20, 5, "A", 3, "B", "C"];
+  // let result = numsAndStrings
+  //   .filter((element) => !isNaN(element))
+  //   .map((element) => -element);
+  // console.log(result);
+  // [-1, -10, 10, 20, -5, -3]
+*/
+
+//? ------------ Challenge 13 ---------------------
+/* 
+  `
+    You have a variable named myArray that contains an Array with another Array in it
+    Create a new Array with Re duce
+    You must Flatten the Array to return a single Array
+    You must Concatenate Letters to get the result
+    Array.flat() is strictly prohibited
+  `;
+  //**************** Solution *************************
+
+  // let myArray = ["E", "l", "z", ["e", "r"], "o"];
+
+  // let result = myArray.reduce(function (prev, current, i, arr) {
+  //   Array.isArray(arr[i]) ? (arr[i] = arr[i].join("")) : "";
+  //   return arr.join("");
+  // });
+
+  // console.log(result);
+  // Elzero
+*/
+
+//? ------------ Challenge 14 ---------------------
+/* 
+  `
+    You have a variable named nums that contains an array of even and odd numbers
+    Find the desired end result by using Reduce only
+    You must set the Initial Value of Reduce to 1
+    If the value of the Current Element in the Reduce is an odd number, add the Accumulator to the Current Element
+    If the value of the Current Element in the Reduce is an even number, multiply the Accumulator with the Current Element
+  `;
+  //**************** Solution *************************
+  // let nums = [2, 12, 11, 5, 10, 1, 99];
+  // let result = nums.reduce(function (accumulator, current, index, array) {
+  //   return current % 2 === 0 ? accumulator * current : accumulator + current;
+  // }, 1);
+  // console.log(result);
+  // // 500
+*/
+
