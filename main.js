@@ -2063,3 +2063,237 @@ if (holidays === 0) {
   // ("####################");
 */
 
+
+//!---------------86 To 93--------------------
+/* 
+//**************** Assignment 1 *************************
+`
+  You have the following HTML element that you have to select in JavaScript in 15 different ways
+  You can use querySelector only four times and querySelectorAll only four times
+
+// HTML CODE
+  <div id="elzero" class="element" name="js">JavaScript</div>
+  `;
+  //**************** Assignment 1 Solution *************************
+  //* Query Selector
+  // let myElement = document.querySelector("div")
+  // let myElement = document.querySelector("[name = 'js']");
+  // let myElement = document.querySelector("#elzero");
+  // let myElement = document.querySelector(".element");
+
+  //* Query Selector All
+  // let myElement = document.querySelectorAll("div")[0]
+  // let myElement = document.querySelectorAll("[name = 'js']")[0];
+  // let myElement = document.querySelectorAll(".element")[0];
+  // let myElement = document.querySelectorAll(".element")[0];
+
+  //* Other Ways
+  // let myElement = document.getElementById("elzero")
+  // let myElement = document.getElementsByClassName("element")[0]
+  // let myElement = document.getElementsByTagName("div")[0]
+  // let myElement = document.getElementsByName("js")[0]
+  // let myElement = document.body.getElementsByClassName("element")[0]
+  // let myElement = document.body.getElementsByTagName("div")[0];
+
+  // console.log(myElement);
+
+  //**************** Assignment 2 *************************
+  `
+    We have a set of images on the page, consisting of 10 images without the source
+    What is required is to change the Src Attribute to the following logo image “https://elzero.org/wp-content/themes/elzero/imgs/logo.png”
+    Change the content of the Alt Attribute for the Elzero Logo
+    You must make a loop that does the job directly and does not repeat the code
+
+    // HTML CODE
+    <div>
+    <img decoding="async" src="#" alt="" />
+    </div>
+    <div>
+      <img decoding="async" src="#" alt="" />
+    </div>
+    <div>
+      <img decoding="async" src="#" alt="" />
+    </div>
+    <div>
+      <img decoding="async" src="#" alt="" />
+    </div>
+    <div>
+      <img decoding="async" src="#" alt="" />
+    </div>
+    <div>
+      <img decoding="async" src="#" alt="" />
+    </div>
+    <div>
+      <img decoding="async" src="#" alt="" />
+    </div>
+    <div>
+      <img decoding="async" src="#" alt="" />
+    </div>
+    <div>
+      <img decoding="async" src="#" alt="" />
+    </div>
+    <div>
+      <img decoding="async" src="#" alt="" />
+    </div>
+  `;
+  //**************** Assignment 2 Solution *************************
+
+  // let myImages = document.images;
+
+  // for (let i = 0; i < myImages.length; i++) {
+  //   myImages[i].setAttribute(
+  //     "src",
+  //     "https://elzero.org/wp-content/themes/elzero/imgs/logo.png"
+  //   );
+  //   myImages[i].setAttribute("alt", "Elzero Logo");
+  // }
+
+  // console.log(myImages[0]);
+
+  //**************** Assignment 3 *************************
+  `
+    You have the following currency conversion form
+    All you have to do is type the currency in dollars into the input field
+    In the place of the result below the input field, you must show the currency in dollars and its counterpart in Egyptian pounds
+    The person can write the number or paste the number as well
+    You can change the div of the result and modify it as you like
+    Never modify the input field
+    CSS formats to beautify the shape only if you want to do it, there is no problem
+    One dollar = 15.6 Egyptian pounds
+    Make sure that the fractions that appear in the result do not exceed two numbers only. For example 1500.32
+
+  //? HTML CODE 
+  <form action="">
+  <input type="number" name="dollar" placeholder="USD Dollar" />
+  <div class="result">{0} USD Dollar = {0} Egyptian Pound</div>
+  </form> 
+
+  //? CSS CODE 
+  <style>
+  * {
+    color: black;
+  }
+  form {
+    width: 65%;
+    position: relative;
+    background-color: #eee;
+    left: 50%;
+    margin-top: 50px;
+    transform: translate(-50%);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  form::before{
+    content: "Convert Us To Egyption Pound";
+    position: absolute;
+    color: yellow;
+    font-weight: bold;
+    left: 50%;
+    transform: translate(-50%);
+    width: fit-content;
+    text-align: center;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  form::after{
+    content: "Result";
+    position: absolute;
+    color: yellow;
+    font-weight: bold;
+    left: 50%;
+    top: 140px;
+    transform: translate(-50%);
+    width: fit-content;
+    text-align: center;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  form input {
+    margin-top: 80px;
+    border-radius: 10px;
+    text-indent: 5px;
+    padding: 5px;
+    position: inherit;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  form div {
+    margin-top: 70px;
+    left: 50%;
+    text-align: center;
+    font-weight: bold;
+  }
+  </style>
+
+  `;
+  //**************** Assignment 3 Solution *************************
+
+  // let myInput = document.querySelector("[name = 'dollar']");
+  // let resultDiv = document.querySelector(".result");
+  // let egyptPound = 15.6;
+  // let result = 0;
+
+  // myInput.oninput = () => {
+  //   parseFloat(myInput.value);
+  //   result = myInput.value * egyptPound;
+  //   resultDiv.textContent = `{${myInput.value}} USD Dollar = {${result.toFixed(
+  //     2
+  //   )}} Egyptian Pound`;
+  // };
+
+  //**************** Assignment 4 *************************
+  `
+    You have racists whose content and attributes are scattered
+    What is required is to move the content and the Title Attribute from the first div to the second and from the second to the first
+    It is absolutely not allowed to write numbers or Strings or use True or False, except for the names of Classes, of course
+    You must add the number 2 next to the word Two
+    Watch the result to see what you need
+
+
+    <div class="one" title="two">Two</div>
+    <div class="two" title="one">One</div>  
+  `;
+  //**************** Assignment 4 Solution *************************
+
+  // let divOne = document.querySelector(".one");
+  // let divTwo = document.querySelector(".two");
+  // let num2 = divOne.ATTRIBUTE_NODE;
+  // let title = divTwo.attributes[--num2].name;
+
+  // let swap = divOne.textContent;
+  // divOne.textContent = divTwo.textContent;
+  // divTwo.textContent = `${swap} ${++num2}`;
+
+  // swap = divOne.getAttribute(title);
+  // divOne.setAttribute(title, divTwo.getAttribute(title));
+  // divTwo.setAttribute(title, swap);
+
+  //**************** Assignment 5 *************************
+  `
+    You have 5 images per page, some of them contain Alt Attributes and the rest don't
+    Loop all images and make sure the Alt Attribute is present
+    If it exists, change the value to Old
+    If it does not exist, change the value to Elzero New
+    Watch the result to see what you need
+
+    <img decoding="async" src="#" alt="One" />
+    <img decoding="async" src="#" />
+    <img decoding="async" src="#" alt="Three" />
+    <img decoding="async" src="#" />
+    <img decoding="async" src="#" />
+  `;
+  //**************** Assignment 5 Solution *************************
+
+  // let myImg = document.images;
+
+  // for (let i = 0; i < myImg.length; i++) {
+  //   if (myImg[i].hasAttribute("alt")) {
+  //     myImg[i].setAttribute("alt", "Old");
+  //   } else myImg[i].setAttribute("alt", "Elzero New");
+  //   console.log(myImg[i]);
+  // }
+*/
+
