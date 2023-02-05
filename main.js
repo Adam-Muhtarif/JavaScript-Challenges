@@ -2297,3 +2297,97 @@ if (holidays === 0) {
   // }
 */
 
+//? ------------ Challenge 16 ---------------------
+/* 
+  `
+    You have an input field in which to type the number of items you want to create
+    You have another field that contains the type of element whether it is Div or Section
+    You have an input field to type in the word that will appear inside the element
+    You have a button to start the creation process
+    When clicking on Create Items, make sure that any old items that have been created will be removed first
+    You can make CSS styles in JavaScript if you want to practice styling in JavaScript
+    You can do the styling normally with CSS without any problem
+    Make sure that the form does not send data so that the page does not refresh
+    The element contains an ID, a Class, and the ID number increases with each element. Watch the example required to understand
+
+    // HTML-Code
+    <form action="">
+      <input type="number" name="elements" class="input" placeholder="Number Of Elements" />
+      <input type="text" name="texts" class="input" placeholder="Elements Text" />
+      <select name="type" class="input">
+        <option value="Div">Div</option>
+        <option value="Section">Section</option>
+      </select>
+      <input type="submit" name="create" value="Create" />
+      <div class="results"></div>
+    </form>
+  `;
+
+  // Get Elements
+  let myForm = document.forms[0];
+  let btn = document.querySelector("[type='submit']");
+  let num = document.querySelector("[name='elements']");
+  let text = document.querySelector("[type='text']");
+  let type = document.querySelector("[name='type']");
+  let result = document.querySelector(".results");
+
+  // Css Styling
+  document.body.style.backgroundColor = "white";
+  myForm.setAttribute(
+    "style",
+    `
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 20px 0 0;  
+  `
+  );
+  num.style.marginBottom = "5px";
+  text.style.marginBottom = "5px";
+  type.style.marginBottom = "5px";
+  result.style.display = "flex";
+  result.style.flexWrap = "wrap";
+  result.style.width = "100%";
+  result.style.justifyContent = "space-between";
+
+  // Btn Click
+  let arrOfNewElements = [];
+  btn.onclick = function (event) {
+    event.preventDefault();
+    result.innerHTML = "";
+
+    for (let i = 0; i < parseInt(num.value); i++) {
+      if (type.value == "Div") create("div");
+      if (type.value == "Section") create("section");
+      console.log(type.value);
+      function create(element) {
+        let newElement = document.createElement(element);
+        newElement.classList = "box";
+        newElement.setAttribute("title", "Element");
+        newElement.id = `id-${i + 1}`;
+        newElement.textContent = text.value;
+        result.appendChild(newElement);
+      }
+    }
+
+    // Put NodeList Value In Array To Use forEach
+    let newElements = document.querySelectorAll(".box");
+    for (let i = 0; i < newElements.length; i++) {
+      arrOfNewElements[i] = newElements[i];
+    }
+
+    // Styling New Elements
+    arrOfNewElements.forEach((ele) => {
+      ele.style.backgroundColor = "coral";
+      ele.style.padding = "5px 20px";
+      ele.style.textAlign = "center";
+      ele.style.margin = "10px 0 0 0";
+      ele.style.flexBasis = "25%";
+      ele.style.position = "relative";
+    });
+  };
+*/
+
