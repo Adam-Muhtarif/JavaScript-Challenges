@@ -2391,3 +2391,149 @@ if (holidays === 0) {
   };
 */
 
+//? ------------ Challenge 17 ---------------------
+
+/* 
+  `
+    Make the design using Js only
+  `;
+
+  // Create Elements
+  let page = document.createElement("div");
+  page.classList.add("page");
+  document.body.prepend(page);
+
+  // header and his children
+  let pageHeader = document.createElement("header");
+  pageHeader.classList.add("header");
+  page.prepend(pageHeader);
+
+  let logo = document.createElement("span");
+  logo.textContent = "Adam";
+  pageHeader.prepend(logo);
+
+  let nav = document.createElement("ul");
+  nav.classList.add("nav");
+  pageHeader.append(nav);
+
+  let listNames = ["Home", "About", "Services", "Contact"];
+  for (let i = 0; i < listNames.length; i++) {
+    let list = document.createElement("li");
+    list.textContent = listNames[i];
+    nav.append(list);
+  }
+
+  // Content and his children
+  let pageContent = document.createElement("div");
+  pageContent.classList.add("content");
+  page.append(pageContent);
+
+  for (let i = 0; i < 20; i++) {
+    let product = document.createElement("div");
+    product.classList.add("product");
+    product.textContent = "Product";
+    let productNum = document.createElement("span");
+    productNum.textContent = `${i + 1}`;
+    productNum.classList.add("no");
+    product.prepend(productNum);
+    pageContent.append(product);
+  }
+
+  // footer and his children
+  let pagFooter = document.createElement("footer");
+  pagFooter.classList.add("footer");
+  page.append(pagFooter);
+  let copyRight = document.createElement("span");
+  copyRight.textContent = "Copyright 2023";
+  pagFooter.append(copyRight);
+
+  // Styling
+  document.body.style.cssText = `
+    background-color: #ddd;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    margin: 0;
+    `;
+
+  page.style.cssText = `
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  `;
+
+  pageHeader.style.cssText = `
+    background-color: white;
+    display: flex;
+    align-items: center;
+  `;
+
+  logo.style.cssText = `
+    flex-basis: 10%;
+    color: green;
+    font-weight: bold;
+    padding-left: 10px;
+    letter-spacing: -0.5px;
+    font-size: 20px;
+  `;
+
+  nav.style.cssText = `
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  `;
+
+  let allList = document.querySelectorAll("li");
+  allList.forEach(function (ele, i, arr) {
+    arr[i].style.cssText = `
+      padding: 15px 10px;
+      font-size: 12px;
+      color: rgb(77, 74, 74);
+    `;
+  });
+
+  pageContent.style.cssText = `
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+  `;
+
+  let allProduct = document.querySelectorAll(".product");
+  let allProductNum = document.querySelectorAll(".no");
+  allProduct.forEach(function (ele, i, arr) {
+    arr[i].style.cssText = `
+      box-sizing:border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color:white;
+      font-size: 10px;
+      color: rgb(77, 74, 74);
+      // width: calc((100% - 40px) / 5);
+      padding: 0 10px 0 10px;
+      height: 90px ;
+    `;
+    allProductNum[i].style.cssText = `
+      font-size: 20px;
+      color: black;
+      font-weight: bold;
+    `;
+  });
+
+  pagFooter.style.cssText = `
+    padding: 10px;
+    background-color: green;
+    text-align: center;
+    text-align: center;
+  `;
+  copyRight.style.cssText = `
+    color: white;
+  `;
+*/
+
