@@ -2637,3 +2637,92 @@ if (holidays === 0) {
   // }
 */
 
+
+//!---------------94 To 101--------------------
+
+/* 
+  //**************** Assignment 1 *************************
+  `
+  Html Code 
+  <a class="open" href="https://google.com">Google</a>
+  <a class="open" href="https://elzero.org">Elzero</a>
+  <a class="not" href="https://facebook.com">Facebook</a>
+  <a class="linked" href="https://linkedin.com">Elzero</a>
+
+  `;
+
+  //**************** Assignment 1 Solution *************************
+  // ---------------------------------------------
+
+  //**************** Assignment 3 *************************
+  `
+    Html Code
+      <div class="our-element">Our Element</div>
+      <p>Paragraph</p>  
+  `;
+  //**************** Assignment 3 Solution *************************
+
+  // let myP = document.querySelector("p");
+  // myP.remove();
+  // let start = document.createElement("div");
+  // start.classList = "start";
+  // start.setAttribute("title", "Start Element");
+  // start.setAttribute("data-value", "start");
+  // start.innerHTML = "Start";
+  // let end = document.createElement("div");
+  // end.classList = "End";
+  // end.setAttribute("title", "End Element");
+  // end.setAttribute("data-value", "end");
+  // end.innerHTML = "End";
+
+  // document.body.prepend(start);
+  // document.body.append(end);
+
+  //**************** Assignment 4 *************************
+  `
+    Html Code 
+      <div>
+        <span>Hello</span>
+        <!-- We Need The Next Text Without Spaces -->
+        Elzero
+      </div>
+  `;
+  //**************** Assignment 4 Solution *************************
+
+  // let result = document.querySelector("div");
+  // let arr = result.textContent.split(" ");
+
+  // First Remove General Empty strings && New lines
+  // for (let i = 0; i < arr.length; i++) {
+  //   if (arr[i] === "" || arr[i] === "\n") {
+  //     arr.splice(i, 1);
+  //     i--;
+  //   }
+  // }
+
+  // let finalResult = arr[1].split("");
+  // Second Remove New lines Inside
+  // for (let i = 0; i < finalResult.length; i++) {
+  //   if (finalResult[i] === "\n") {
+  //     finalResult.splice(i, 1);
+  //     i--;
+  //   }
+  // }
+  // console.log(finalResult.join(""));
+
+  //**************** Assignment 5 *************************
+  `
+    Html Code
+      <div>Element</div>
+      <span>Element</span>
+      <p>Element</p>
+      <article>Element</article>
+      <section>Element</section>
+  `;
+  //**************** Assignment 5 Solution *************************
+
+  // document.onclick = function (e) {
+  //   console.log(`This Is ${e.target.length}`);
+  // };
+
+*/
