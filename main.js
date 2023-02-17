@@ -2537,3 +2537,103 @@ if (holidays === 0) {
   `;
 */
 
+//? ------------ Challenge 18 ---------------------
+
+/* 
+`
+//! Ideas to add
+1- Onload focus on addInput
+4- Alert if class already exits
+2- Error alert when blur removeInput while is empty
+3- Remove Spaces from the input when we blur
+4- Replace blur with Enter Key
+5- Use Sweet alert to make beautiful alert
+6- Use Tailwind or Bootstrap to make design prettier
+`;
+
+//**************** Solution *************************
+// let addInput = document.querySelector(".add");
+  // let removeInput = document.querySelector(".remove");
+  // let currentElement = document.getElementById("current");
+  // let newElements = document.querySelector(".newElements");
+  // newElements.innerHTML = "No Classes To Show";
+
+  // Add Input
+  // addInput.onblur = function () {
+  //   if (addInput.value) {
+  //     let arrOfClasses = addInput.value.split(" ");
+
+  //     // Make Sure There Is No Spaces
+  //     // arrOfClasses.forEach((element, i, arr) => {
+  //     //   if (element === "") {
+  //     //     if (i == arr.length - 1) {
+  //     //       arr.splice(i, 1);
+  //     //     }
+  //     //     arr.splice(i, 1);
+  //     //   }
+  //     // });
+  //     // console.log(arrOfClasses);
+  
+  //     // Convert To LowerCAse And Add Class To CurrentElement
+  //     arrOfClasses.forEach((ele) => {
+    //       ele = ele.toLowerCase();
+    //       currentElement.classList.add(ele);
+    //     });
+    
+  //     // Send Arr Of currentElement Classes
+  //     displayClasses(currentElement.className.split(" "));
+  
+  //     addInput.value = "";
+  //   } else {
+  //     alert("☹ Sorry, The Add Input Is Empty, Give It Some Value");
+  //   }
+  // };
+  
+  // Remove Input
+  // removeInput.onblur = function () {
+  //   if (removeInput.value) {
+  //     removeInput.value = removeInput.value.toLowerCase();
+  //     let arrOfClasses = removeInput.value.split(" ");
+  //     let arrOfCurrentElementClasses = currentElement.className.split(" ");
+
+  //     // Search
+  //     for (let i = 0; i < arrOfCurrentElementClasses.length; i++) {
+  //       for (let k = 0; k < arrOfClasses.length; k++) {
+  //         if (arrOfCurrentElementClasses[i] === arrOfClasses[k]) {
+  //           currentElement.classList.remove(arrOfClasses[k]);
+  //           document.getElementById(arrOfClasses[k]).remove();
+  //         }
+  //       }
+  //     }
+  //   }
+
+  //   if (currentElement.classList.length == 0) {
+  //     newElements.innerHTML = "No Classes To Show";
+  //   }
+  //   removeInput.value = "";
+  // };
+
+  // Functions
+  // function displayClasses(arr) {
+  //   // Sort The Array of Classes => A,B,C
+  //   arr.sort(function (a, b) {
+  //     if (a > b) {
+  //       return 1;
+  //     }
+  //     if (a < b) {
+  //       return -1;
+  //     }
+  //     return 0;
+  //   });
+
+  //   // Create Element and append to result div
+  //   newElements.innerHTML = "";
+  //   arr.forEach(function (newClass) {
+  //     let element = document.createElement("button");
+  //     element.id = newClass;
+  //     element.textContent = newClass;
+  //     newElements.appendChild(element);
+  //   });
+  // }
+*/
+
