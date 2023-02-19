@@ -2827,3 +2827,167 @@ if (holidays === 0) {
   //   });
   // }
 */
+
+
+//!---------------102 To 110--------------------
+/* 
+  //**************** Assignment 1 *************************
+  `
+    Use the prompt to fetch a message from the user
+    The message will be “Print Number From – To”
+    The default message will be “Example: 5-20”.
+    The person will write two numbers with a sign in between them –
+    The first number can be greater than the second or vice versa
+    In both cases we print the numbers inside the page from the smallest number to the largest number. See the example to understand the idea
+
+    Needed Result
+      // 5-1
+
+      5
+      4
+      3
+      2
+      1
+
+      // 5-1
+
+      1
+      2
+      3
+      4
+      5
+  `;
+  //**************** Assignment 1 Solution *************************
+
+  // let btn = document.querySelector("button");
+
+  // btn.onclick = function (event) {
+  //   let message = prompt("Print Number From – To", "5-20");
+  //   let arrOfNums = message.split("-").map(function (ele) {
+  //     return (ele = parseInt(ele));
+  //   });
+  //   if (arrOfNums[0] < arrOfNums[1]) {
+  //     for (let i = arrOfNums[0]; i <= arrOfNums[1]; i++) {
+  //       console.log(i);
+  //     }
+  //   } else {
+  //     for (let i = arrOfNums[0]; i >= arrOfNums[1]; i--) {
+  //       console.log(i);
+  //     }
+  //   }
+  // };
+
+
+  //**************** Assignment 2 *************************
+  `
+    Create a Function that creates a Popup inside the page as in the following image
+    The Popup contains a Close button, when pressed it deletes the Popup from the page
+    You must run the function 5 seconds after the page loads
+    link to review => https://elzero.org/wp-content/uploads/2021/09/javascript-102-110-assign-2.jpg
+  `;
+  //**************** Assignment 2 Solution *************************
+
+  // window.onload = function () {
+  //   setTimeout(() => {
+  //     let popUp = document.createElement("div");
+  //     popUp.style.cssText = `
+  //     background: #eee;
+  //     width: 500px;
+  //     height: 150px;
+  //     position: absolute;
+  //     top: 50%;
+  //     left: 50%;
+  //     transform: translate(-50%,-50%);
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: center;
+  //     align-items: center;
+  //     font-family: "cairo";
+
+  //     `;
+  //     popUp.innerHTML = `
+  //       <h1>Welcome</h1>
+  //       <p>Welcome To Elzero Web School</p>
+  //       <button>X</button>
+  //     `;
+  //     let heading = popUp.querySelector("h1");
+  //     let myP = popUp.querySelector("p");
+  //     let btn = popUp.querySelector("button");
+
+  //     heading.style.cssText = "margin: 0;";
+  //     myP.style.cssText = "margin: 0;";
+  //     btn.style.cssText = `
+  //       font-family: "cairo";
+  //       position: absolute;
+  //       height: 40px;
+  //       width: 40px;
+  //       background-color: red;
+  //       border-radius: 50%;
+  //       border: none;
+  //       right: -15px;
+  //       top: -15px;
+  //       color: white;
+  //       display: flex;
+  //       justify-content: center;
+  //       align-items: center;
+  //       font-size: 16px;
+  //       cursor: pointer;
+  //     `;
+
+  //     document.body.prepend(popUp);
+  //     btn.onclick = function () {
+  //       popUp.remove();
+  //     };
+  //   }, 5000);
+  // };
+
+  //**************** Assignment 3 *************************
+  `
+    Create a Div inside the page with the number 10 in it, for example
+    Create a counter that counts from the number inside the div until it reaches zero
+    When zero is reached, stop counting
+  `;
+  //**************** Assignment 3 Solution *************************
+
+  // let div = document.createElement("div");
+  // div.textContent = 10;
+  // let counter = setInterval(() => {
+  //   --div.textContent;
+  //   if (div.textContent == 0) clearInterval(counter);
+  // }, 1000);
+  // document.body.prepend(div);
+
+  //**************** Assignment 4 *************************
+  `
+    Use the same assignment as before without any change
+    When 0 is reached, instead of stopping the counter, switch to the current page of the academy's website, Elzero.org
+  `;
+  //**************** Assignment 4 Solution ********************
+
+  // let div = document.createElement("div");
+  // document.body.prepend(div);
+  // div.textContent = 10;
+  // let counter = setInterval(() => {
+  //   --div.textContent;
+  //   if (div.textContent == 0) window.location.href = "https://Elzero.org";
+  // }, 1000);
+
+  //**************** Assignment 5 ********************
+  `
+    Use the same assignment as before without any change
+    When number 5 is reached, open the Academy's Elzero.org page in Popup
+    See the picture to understand the idea
+    When you reach zero, don't forget to turn off the counter
+    link to review => https://elzero.org/wp-content/uploads/2021/09/javascript-102-110-assign-5.jpg 
+  `
+  //**************** Assignment 5 Solution ********************
+
+  // let div = document.createElement("div");
+  // document.body.prepend(div);
+  // div.textContent = 10;
+  // let counter = setInterval(() => {
+  //   --div.textContent;
+  //   if (div.textContent == 5) window.open("https://elzero.org","_blank","height = 500; width = 300;");
+  //   if (div.textContent == 0) clearInterval(counter);
+  // }, 1000);
+*/
