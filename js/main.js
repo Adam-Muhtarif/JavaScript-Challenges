@@ -2646,3 +2646,184 @@ if (holidays === 0) {
   // };
 
 */
+
+//? ------------ Challenge 18 ---------------------
+
+/* 
+`
+  See the following figure => https://elzero.org/wp-content/uploads/2021/09/dom-assignment-two.gif
+  You have two input fields, one to add Classes to the Current element and the other to delete Classes from the Current element
+  The addition process takes place as soon as you exit the Blur input field
+  Ensure that the class name is added as Small Letters regardless of the entry
+  If a person writes two words with spaces between them, they are added as Two Classes or deleted as Two Classes as well
+  When exiting the input field, be sure to delete the value in it
+  You must make sure that the field is not empty before leaving it, so that no error appears
+  You should make a Function to be fired each time you exit an input field
+  The function of the function is to display the Classes on the Current element in place of the result below
+  The Function sorts the names of the Classes alphabetically before displaying them
+  If there are no Classes on the element, the message "No Classes To Show" is displayed.
+
+  //! Ideas to add
+  1- Onload focus on addInput
+  4- Alert if class already exits
+  2- Error alert when blur removeInput while is empty
+  3- Remove Spaces from the input when we blur
+  4- Replace blur with Enter Key
+  5- Use Sweet alert to make beautiful alert
+  6- Use Tailwind or Bootstrap to make design prettier
+  7- Add nice title
+`;
+`
+  Html Code
+    <div class="app">
+        <div class="input">
+          <input class="add" type="text" / placeholder="Add Classes"> <input
+          class="remove" type="text" / placeholder="Remove Classes">
+        </div>
+        <div class="" id="current">Current Element</div>
+        <div class="result">
+          Current Element Class Lists
+          <div class="newElements"></div>
+        </div>
+      </div>
+`
+`
+  Style
+    * {
+    color: black;
+  }
+  .app {
+    width: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .app input {
+    width: calc(50% - 26px);
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+  }
+  input:focus {
+    outline: none;
+  }
+  #current,.result {
+    background-color: #ddd;
+    padding: 20px;
+    font-size: 20px;
+  }
+  #current {
+    text-align: center;
+  }
+  .result{
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .newElements {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  button {
+    padding: 5px 20px;
+    font-size: 18px;
+    margin-right: 5px;
+    background-color: coral;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+  }
+
+`
+
+//**************** Solution *************************
+// let addInput = document.querySelector(".add");
+  // let removeInput = document.querySelector(".remove");
+  // let currentElement = document.getElementById("current");
+  // let newElements = document.querySelector(".newElements");
+  // newElements.innerHTML = "No Classes To Show";
+
+  // Add Input
+  // addInput.onblur = function () {
+  //   if (addInput.value) {
+  //     let arrOfClasses = addInput.value.split(" ");
+
+  //     // Make Sure There Is No Spaces
+  //     // arrOfClasses.forEach((element, i, arr) => {
+  //     //   if (element === "") {
+  //     //     if (i == arr.length - 1) {
+  //     //       arr.splice(i, 1);
+  //     //     }
+  //     //     arr.splice(i, 1);
+  //     //   }
+  //     // });
+  //     // console.log(arrOfClasses);
+  
+  //     // Convert To LowerCAse And Add Class To CurrentElement
+  //     arrOfClasses.forEach((ele) => {
+    //       ele = ele.toLowerCase();
+    //       currentElement.classList.add(ele);
+    //     });
+    
+  //     // Send Arr Of currentElement Classes
+  //     displayClasses(currentElement.className.split(" "));
+  
+  //     addInput.value = "";
+  //   } else {
+  //     alert("☹ Sorry, The Add Input Is Empty, Give It Some Value");
+  //   }
+  // };
+  
+  // Remove Input
+  // removeInput.onblur = function () {
+  //   if (removeInput.value) {
+  //     removeInput.value = removeInput.value.toLowerCase();
+  //     let arrOfClasses = removeInput.value.split(" ");
+  //     let arrOfCurrentElementClasses = currentElement.className.split(" ");
+
+  //     // Search
+  //     for (let i = 0; i < arrOfCurrentElementClasses.length; i++) {
+  //       for (let k = 0; k < arrOfClasses.length; k++) {
+  //         if (arrOfCurrentElementClasses[i] === arrOfClasses[k]) {
+  //           currentElement.classList.remove(arrOfClasses[k]);
+  //           document.getElementById(arrOfClasses[k]).remove();
+  //         }
+  //       }
+  //     }
+  //   }
+
+  //   if (currentElement.classList.length == 0) {
+  //     newElements.innerHTML = "No Classes To Show";
+  //   }
+  //   removeInput.value = "";
+  // };
+
+  // Functions
+  // function displayClasses(arr) {
+  //   // Sort The Array of Classes => A,B,C
+  //   arr.sort(function (a, b) {
+  //     if (a > b) {
+  //       return 1;
+  //     }
+  //     if (a < b) {
+  //       return -1;
+  //     }
+  //     return 0;
+  //   });
+
+  //   // Create Element and append to result div
+  //   newElements.innerHTML = "";
+  //   arr.forEach(function (newClass) {
+  //     let element = document.createElement("button");
+  //     element.id = newClass;
+  //     element.textContent = newClass;
+  //     newElements.appendChild(element);
+  //   });
+  // }
+*/
