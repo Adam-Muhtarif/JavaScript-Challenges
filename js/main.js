@@ -2991,3 +2991,104 @@ if (holidays === 0) {
   //   if (div.textContent == 0) clearInterval(counter);
   // }, 1000);
 */
+
+//*------------ Example ---------------
+/* 
+`
+  HTML CODE
+    <div class="app">
+      <div class="colors">
+        <div class="active" color-data="red"></div>
+        <div color-data="green"></div>
+        <div color-data="blue"></div>
+        <div color-data="gray"></div>
+        </div>
+      <div class="box"></div>
+    </div>
+  CSS CODE
+      .app {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 500px;
+      gap: 10px;
+    }
+    .colors {
+      width: 600px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: #eee;
+    }
+    .colors > div {
+      width: 80px;
+      height: 80px;
+    }
+    .colors div:nth-child(1) {
+      background-color: rgb(161, 17, 17);
+    }
+    .colors div:nth-child(1).active,
+    .colors div:nth-child(1):hover {
+      background-color: red;
+    }
+    .colors div:nth-child(2) {
+      background-color: rgb(15, 90, 15);
+    }
+    .colors div:nth-child(2).active,
+    .colors div:nth-child(2):hover {
+      background-color: rgb(11, 192, 11);
+    }
+    .colors div:nth-child(3) {
+      background-color: rgb(14, 14, 122);
+    }
+    .colors div:nth-child(3).active,
+    .colors div:nth-child(3):hover {
+      background-color: blue;
+    }
+    .colors div:nth-child(4) {
+      background-color: rgb(78, 76, 76);
+    }
+    .colors div:nth-child(4).active,
+    .colors div:nth-child(4):hover {
+      background-color: rgb(146, 143, 143);
+    }
+    .box {
+      width: 600px;
+      height: 300px;
+      background-color: red;
+    }
+
+        `;
+  let resultBox = document.getElementsByClassName("box")[0];
+  let allBoxes = document.querySelectorAll(".colors > *");
+
+  if (localStorage.bgColor) {
+    resultBox.style.backgroundColor = localStorage.bgColor;
+    allBoxes.forEach((box) => {
+      box.classList.remove("active");
+      // Way One
+      if (box.getAttribute("color-data") === localStorage.bgColor) {
+        box.classList.add("active");
+      }
+      // Way Two
+      // document
+      //   .querySelector(`[color-data = ${localStorage.bgColor}]`)
+      //   .classList.add("active");
+    });
+  }
+
+  allBoxes.forEach((box) => {
+    // When click on any box
+    box.addEventListener("click", function (e) {
+      allBoxes.forEach((box) => {
+        box.classList.remove("active");
+      });
+      box.classList.add("active");
+      localStorage.setItem("bgColor", box.getAttribute("color-data"));
+      resultBox.style.backgroundColor = localStorage.bgColor;
+    });
+  });
+*/
