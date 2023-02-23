@@ -3310,3 +3310,174 @@ if (holidays === 0) {
 
 */
 
+//? ------------ Challenge 19 ---------------------
+/* 
+
+`
+  Html Code 
+    <div class="form">
+    <blur type="text" class="blur" />
+    <blur type="submit" class="add" value="Add Task" />
+    </div>
+    <div class="tasks"></div>
+    <button class="test">Test</button>
+    
+  Css Code 
+    .form {
+    background-color: #ddd;
+    width: 500px;
+    position: relative;
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+  }
+  .form .blur {
+    border: none;
+    background-color: white;
+    width: 390px;
+    padding: 10px;
+    font-size: 20px;
+  }
+  .blur:focus {
+    outline: none;
+  }
+  .form .add {
+    background-color: coral;
+    color: white;
+    border-radius: 10px;
+    padding: 0 10px;
+    font-weight: bold;
+  }
+  .tasks {
+    background-color: #ddd;
+    border-radius: 10px;
+    width: 500px;
+    position: relative;
+    left: 50%;
+    top: 40px;
+    transform: translate(-50%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .tasks div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 2px 10px;
+    border-radius: 10px;
+  }
+  .tasks div p {
+    text-transform: capitalize;
+  }
+  .tasks div button {
+    background: coral;
+    color: white;
+    padding: 5px 8px;
+    font-weight: bold;
+  }
+
+
+`
+  let blur = document.querySelector(".blur");
+  let addBtn = document.querySelector(".add");
+  let tasks = document.querySelector(".tasks");
+  let taskId = 0;
+  let localStorageTasks = [];
+
+  // for just testing
+  let btnTest = document.querySelector(".test");
+  btnTest.onclick = function () {};
+
+  window.onload = function () {
+    blur.focus();
+  };
+
+  // Check if localStorage.task has a value
+  if (localStorage.tasks) {
+    // Get the value from localStorage
+    localStorageTasks = JSON.parse(localStorage.getItem("tasks"));
+
+    // Check if it has value/properties
+    if (localStorageTasks.length > 0) {
+      
+      //   The initial Value for id will be the 
+      //   last id for the last task in storage
+      
+      // taskId = +localStorageTasks[localStorageTasks.length - 1].id;
+
+      // Display tasks in localStorage inside our page
+      localStorageTasks.forEach((task) => {
+        let taskFromStorage = document.createElement("div");
+        taskFromStorage.innerHTML = `
+          <p>${task.title}</p>
+          <button id="deleteBtn" >Delete</button>
+        `;
+        taskFromStorage.id = task.id;
+        tasks.appendChild(taskFromStorage);
+      });
+    }
+  }
+
+  // Onclick Add Task
+  addBtn.onclick = function () {
+    // Call function
+    createElement(blur.value);
+  };
+
+  function createElement(taskText) {
+    let taskBox = document.createElement("div");
+    taskId++;
+    taskBox.id = taskId;
+    taskBox.innerHTML = `
+      <p>${taskText}</p>
+      <button id="deleteBtn" >Delete</button>
+    `;
+
+    // Add Task to LocalStorage
+
+    localStorageTasks.push({
+      id: taskBox.id,
+      title: taskBox.querySelector("p").textContent,
+    });
+    localStorage.tasks = JSON.stringify(localStorageTasks);
+
+    // Call Function and send taskBox
+    appendElement(taskBox);
+  }
+
+  // Call function append task to tasks box
+  function appendElement(task) {
+    tasks.appendChild(task);
+    window.location.reload();
+  }
+
+  // Onclick Delete Task Button
+  document.querySelectorAll("#deleteBtn").forEach((btn) => {
+    btn.onclick = function () {
+      this.parentElement.remove();
+
+      // Delete Test
+      deleteTask(this.parentElement.id);
+    };
+  });
+
+  function deleteTask(id) {
+    localStorageTasks.forEach((ele, i, arr) => {
+      if (ele.id == id) {
+        arr.splice(i, 1);
+        localStorageTasks.forEach((ele, i, arr) => {
+          ele.id = i + 1;
+        });
+        localStorage.tasks = JSON.stringify(localStorageTasks);
+      }
+    });
+  }
+
+*/
