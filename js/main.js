@@ -3855,3 +3855,52 @@ if (holidays === 0) {
   console.log(`Origin Price Is ${or}`);
   // Origin Price Is 30 USD
 */
+
+
+//? ------------ Challenge 22 ---------------------
+/* 
+  `
+  `;
+  //----------------  Solution--------------------------
+
+  // let chosen = 1;
+
+  // let myFriends = [
+  //   { title: "Osama", age: 39, available: true, skills: ["HTML", "CSS"] },
+  //   { title: "Sayed", age: 33, available: false, skills: ["Python", "Django"] },
+  //   { title: "Adam", age: 23, available: true, skills: ["PHP", "Laravel"] },
+  // ];
+
+  // switch (chosen) {
+  //   case 1:
+  //     let [one] = myFriends;
+  //     distructData(one);
+  //     break;
+  //   case 2:
+  //     let [, two] = myFriends;
+  //     distructData(two);
+  //     break;
+  //   case 3:
+  //     let [, , three] = myFriends;
+  //     distructData(three);
+  //     break;
+
+  //   default:
+  //     console.log("Choose from 1 to 3");
+  //     break;
+  // }
+
+  // function distructData(data) {
+  //   let {
+  //     title,
+  //     age,
+  //     available,
+  //     skills: [, last],
+  //   } = data;
+
+  //   console.log(title);
+  //   console.log(age);
+  //   console.log(available ? `Available` : `Not Available`);
+  //   console.log(last);
+  // }
+*/
