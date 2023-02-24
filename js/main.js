@@ -3481,3 +3481,220 @@ if (holidays === 0) {
   }
 
 */
+
+//!---------------110 To 114--------------------
+/* 
+
+  //**************** Assignment 1 *************************
+  `
+    Invoke 3 fonts from Google Fonts on the page “Open Sans, Cairo, Roboto” or any other three fonts
+    Create Three Select Boxes
+    The first contains Three Options, and they are the names of the fonts that you called “Open, Cairo, Roboto.”
+    The second contains Six Options, including any 6 colors you choose
+    The third option contains font sizes from 16 to 30
+    In each Select Box the default value is the first value
+    Each default value is applied to the page's CSS
+    Now all you have to do is allow the person to choose these options and apply them directly on the page upon selection
+    Save these options in the Local Storage
+    If the person closes the page or reloads, he must apply what he chose previously and also change the selection inside the Select Boxes
+
+
+    Html Code
+      <section>
+        <label for="font">Choose Font</label>
+        <select name="" id="font">
+          <option value="Franklin Gothic Medium" selected>
+            Franklin Gothic Medium
+          </option>
+          <option value="djadli_linearHour">djadli_linearHour</option>
+          <option value="Segoe Script">Segoe Script</option>
+        </select>
+
+        <label for="color">Choose Color</label>
+        <select name="" id="color">
+          <option value="green" selected>Green</option>
+          <option value="yellow">Yellow</option>
+          <option value="red">Red</option>
+          <option value="coral">Coral</option>
+          <option value="blue">Blue</option>
+          <option value="orange">Orange</option>
+        </select>
+
+        <label for="size">Choose size</label>
+        <select name="" id="size">
+          <option value="16" selected>16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+        </select>
+      </section>
+      <section class="result">
+        <p>Out Put</p>
+        Adam Abdulkarim Adam Samakab [ Adam Muhtarif ]
+      </section>
+
+    Css Code
+      section p {
+      font-weight: bold;
+      letter-spacing: 5px;
+      background-color: #ddd;
+      padding: 10px 20px;
+    }
+    section.result {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 245px;
+      text-align: center; 
+      font-family: "cairo";
+      background-color: #eee;
+      padding: 50px;
+    }
+
+  `;
+  //**************** Assignment 1 Solution *************************
+
+  // let font = document.getElementById("font");
+  // let color = document.getElementById("color");
+  // let size = document.getElementById("size");
+  // let result = document.querySelector("section.result");
+
+  // // Check if there is data in storage
+  // if (localStorage.font) {
+  //   result.style.fontFamily = localStorage.font;
+
+  //   // Set initial value from storage
+  //   font.querySelectorAll("option").forEach((opt) => {
+  //     opt.removeAttribute("selected", "");
+  //     if (opt.value === localStorage.font) {
+  //       opt.setAttribute("selected", "");
+  //     }
+  //   });
+  // }
+
+  // // Check if there is data in storage
+  // if (localStorage.color) {
+  //   result.style.color = localStorage.color;
+  //   // Set initial value from storage
+  //   color.querySelectorAll("option").forEach((opt) => {
+  //     opt.removeAttribute("selected", "");
+  //     if (opt.value === localStorage.color) {
+  //       opt.setAttribute("selected", "");
+  //     }
+  //   });
+  // }
+
+  // if (localStorage.size) {
+  //   result.style.fontSize = `${localStorage.size}px`;
+
+  //   // Set initial value from storage
+  //   size.querySelectorAll("option").forEach((opt) => {
+  //     opt.removeAttribute("selected", "");
+  //     if (opt.value === localStorage.size) {
+  //       opt.setAttribute("selected", "");
+  //     }
+  //   });
+  // }
+
+  // // Font Event
+  // font.onblur = function () {
+  //   result.style.fontFamily = font.value;
+  //   localStorage.font = font.value;
+  //   location.reload();
+  // };
+
+  // // Color Event
+  // color.onblur = function () {
+  //   result.style.color = color.value;
+  //   localStorage.color = color.value;
+  //   location.reload();
+  // };
+
+  // // Size Event
+  // size.onblur = function () {
+  //   result.style.fontSize = `${size.value}px`;
+  //   localStorage.size = size.value;
+  //   location.reload();
+  // };
+
+  //**************** Assignment 2 *************************
+  `
+  Create a Form with 3 input fields and 1 Select Box
+  You can add any 3 types of input fields of your choice
+  Add 5 options of your choice to the Select Box
+  It must be ensured that if the page is reloaded, the values written by the person inside the input fields will not be deleted
+  It must be ensured that if the page is reloaded, what the person previously chose in the Select Box is selected
+  When you close the page, be sure that all this data will be deleted
+
+
+
+    Html Code
+      <form action="">
+        <input id="fName" type="text" placeholder="first name" />
+        <input id="mName" type="text" placeholder="middle name" />
+        <input id="lName" type="text" placeholder="last name" />
+        <br>
+        <label for="">Select Your Country</label>
+        <select name="" id="country">
+          <option value="sudan">Sudan</option>
+          <option value="somalia">Somalia</option>
+          <option value="egypt">Egypt</option>
+          <option value="syria">Syria</option>
+          <option value="saudi">Saudi</option>
+        </select>
+      </form>
+  `;
+  //**************** Assignment 2 Solution *************************
+
+  // let fName = document.getElementById("fName");
+  // let mName = document.getElementById("mName");
+  // let lName = document.getElementById("lName");
+  // let country = document.getElementById("country");
+
+  // window.onload = function () {
+  //   fName.value = "";
+  //   mName.value = "";
+  //   lName.value = "";
+  //   country.value = "";
+
+  //   if (sessionStorage.fName) {
+  //     fName.value = sessionStorage.fName;
+  //   }
+  //   if (sessionStorage.mName) {
+  //     mName.value = sessionStorage.mName;
+  //   }
+  //   if (sessionStorage.lName) {
+  //     lName.value = sessionStorage.lName;
+  //   }
+  //   if (sessionStorage.country) {
+  //     country.value = sessionStorage.country;
+  //   }
+  // };
+
+  // fName.addEventListener("blur", function () {
+  //   sessionStorage.fName = fName.value;
+  // });
+  // mName.addEventListener("blur", function () {
+  //   sessionStorage.mName = mName.value;
+  // });
+  // lName.addEventListener("blur", function () {
+  //   sessionStorage.lName = lName.value;
+  // });
+  // country.addEventListener("input", function () {
+  //   sessionStorage.country = country.value;
+  // });
+
+*/
+
