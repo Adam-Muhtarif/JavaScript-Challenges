@@ -3764,3 +3764,39 @@ if (holidays === 0) {
   // console.log(`My Hobbies: ${h1} And ${h3}`);
   // My Hobbies: Reading And Programming
 */
+
+//? ------------ Challenge 20 ---------------------
+/* 
+
+
+  `;
+  //----------------  Solution--------------------------
+
+  // let arr1 = ["Ahmed", "Sameh", "Sayed"];
+  // let arr2 = ["Mohamed", "Gamal", "Amir"];
+  // let arr3 = ["Haytham", "Shady", "Mahmoud"];
+
+  // Play With Arrays To Prepare For Destructuring
+
+  // 1=> way one put all arrs in one then choose wan you want
+  // let myFriends = arr3.concat(arr2, arr1);
+
+  // 2=> way two make function and and send arrs that u need
+  // dis(arr3, arr1);
+
+  // Write Your Destructuring Assignment Here
+  // 1
+  // let [, a, b, , , , c] = myFriends;
+  // console.log(`My Best Friends: ${a}, ${b}, ${c}`);
+
+  // 2
+  // function dis(one, three) {
+  //   let [, a, b] = one;
+  //   let [c] = three;
+
+  //   console.log(`My Best Friends: ${a}, ${b}, ${c}`);
+  // }
+
+  // Needed Output
+  // My Best Friends: Shady, Mahmoud, Ahmed
+*/
