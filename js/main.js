@@ -3698,3 +3698,69 @@ if (holidays === 0) {
 
 */
 
+//!---------------115 To 122--------------------
+/* 
+  //**************** Assignment 1 *************************
+  `
+
+  `;
+  //**************** Assignment 1 Solution *************************
+
+  // let myNumbers = [1, 2, 3, 4, 5];
+
+  // Write Your Destructuring Assignment Here
+  // let [a, , , , e] = myNumbers;
+
+  // console.log(a * e); // 5
+
+  //**************** Assignment 2 *************************
+  `
+      
+  `;
+  //**************** Assignment 2 Solution *************************
+
+  // let mySkills = [
+  //   "HTML",
+  //   "CSS",
+  //   "JavaScript",
+  //   ["PHP", "Python", ["Django", "Laravel"]],
+  // ];
+
+  // Write Your Destructuring Assignment Here
+  // let [a, b, c, [d, e, [f, g]]] = mySkills;
+
+  // console.log(`My Skills: ${a}, ${b}, ${c}, ${d}, ${e}, ${f}, ${g}`);
+
+  // Needed Output
+  // My Skills: HTML, CSS, JavaScript, PHP, Python, Django, Laravel
+
+  //**************** Assignment 4 *************************
+  `
+
+  `;
+  //**************** Assignment 4 Solution *************************
+
+  // const member = {
+  //   age: 30,
+  //   working: false,
+  //   country: "Egypt",
+  //   hobbies: ["Reading", "Swimming", "Programming"],
+  // };
+
+  // Write Your Destructuring Assignment Here
+  // let {
+  //   age: a,
+  //   working: w,
+  //   country: c,
+  //   hobbies: [h1, , h3],
+  // } = member;
+
+  // console.log(`My Age Is ${a} And Iam ${w ? "" : "Not"} Working`);
+  // My Age Is 30 And Iam Not Working
+
+  // console.log(`I Live in ${c}`);
+  // I Live in Egypt
+
+  // console.log(`My Hobbies: ${h1} And ${h3}`);
+  // My Hobbies: Reading And Programming
+*/
