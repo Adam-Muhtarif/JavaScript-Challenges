@@ -2846,7 +2846,6 @@ if (holidays === 0) {
   // }
 */
 
-
 //!---------------102 To 110--------------------
 /* 
   //**************** Assignment 1 *************************
@@ -3115,7 +3114,6 @@ if (holidays === 0) {
   });
 */
 
-
 //!---------------102 To 110--------------------
 /* 
 
@@ -3332,20 +3330,14 @@ if (holidays === 0) {
 
 */
 
->>>>>>> a433f7c9d9d52a48a28c76b2282f216b79cc2fd0
 //? ------------ Challenge 19 ---------------------
 /* 
 
 `
   Html Code 
     <div class="form">
-<<<<<<< HEAD
-    <input type="text" class="input" />
-    <input type="submit" class="add" value="Add Task" />
-=======
     <blur type="text" class="blur" />
     <blur type="submit" class="add" value="Add Task" />
->>>>>>> a433f7c9d9d52a48a28c76b2282f216b79cc2fd0
     </div>
     <div class="tasks"></div>
     <button class="test">Test</button>
@@ -4122,7 +4114,6 @@ if (holidays === 0) {
   // console.log(finalArray)
 */
 
-
 //? ------------ Challenge 24 ---------------------
 /* 
   `
@@ -4172,4 +4163,4 @@ if (holidays === 0) {
   // chars.copyWithin(0, start, end);
   // console.log(chars);
 */
-// hi adam
+// All Errors Solved
