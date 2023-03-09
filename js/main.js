@@ -292,6 +292,7 @@
       // console.log(--points - --points + --points + --points - ++points); // 8;
   
   */
+
 // ?--------------------Challenge 4-------------
 
 /*  let a = 1_00;
@@ -2151,18 +2152,18 @@ if (holidays === 0) {
   //**************** Assignment 3 *************************
   `
     You have the following currency conversion form
-    All you have to do is type the currency in dollars into the input field
-    In the place of the result below the input field, you must show the currency in dollars and its counterpart in Egyptian pounds
+    All you have to do is type the currency in dollars into the blur field
+    In the place of the result below the blur field, you must show the currency in dollars and its counterpart in Egyptian pounds
     The person can write the number or paste the number as well
     You can change the div of the result and modify it as you like
-    Never modify the input field
+    Never modify the blur field
     CSS formats to beautify the shape only if you want to do it, there is no problem
     One dollar = 15.6 Egyptian pounds
     Make sure that the fractions that appear in the result do not exceed two numbers only. For example 1500.32
 
   //? HTML CODE 
   <form action="">
-  <input type="number" name="dollar" placeholder="USD Dollar" />
+  <blur type="number" name="dollar" placeholder="USD Dollar" />
   <div class="result">{0} USD Dollar = {0} Egyptian Pound</div>
   </form> 
 
@@ -2208,7 +2209,7 @@ if (holidays === 0) {
     padding: 10px;
     border-radius: 10px;
   }
-  form input {
+  form blur {
     margin-top: 80px;
     border-radius: 10px;
     text-indent: 5px;
@@ -2229,15 +2230,15 @@ if (holidays === 0) {
   `;
   //**************** Assignment 3 Solution *************************
 
-  // let myInput = document.querySelector("[name = 'dollar']");
+  // let myblur = document.querySelector("[name = 'dollar']");
   // let resultDiv = document.querySelector(".result");
   // let egyptPound = 15.6;
   // let result = 0;
 
-  // myInput.oninput = () => {
-  //   parseFloat(myInput.value);
-  //   result = myInput.value * egyptPound;
-  //   resultDiv.textContent = `{${myInput.value}} USD Dollar = {${result.toFixed(
+  // myblur.onblur = () => {
+  //   parseFloat(myblur.value);
+  //   result = myblur.value * egyptPound;
+  //   resultDiv.textContent = `{${myblur.value}} USD Dollar = {${result.toFixed(
   //     2
   //   )}} Egyptian Pound`;
   // };
@@ -2298,9 +2299,9 @@ if (holidays === 0) {
 //? ------------ Challenge 16 ---------------------
 /* 
   `
-    You have an input field in which to type the number of items you want to create
+    You have an blur field in which to type the number of items you want to create
     You have another field that contains the type of element whether it is Div or Section
-    You have an input field to type in the word that will appear inside the element
+    You have an blur field to type in the word that will appear inside the element
     You have a button to start the creation process
     When clicking on Create Items, make sure that any old items that have been created will be removed first
     You can make CSS styles in JavaScript if you want to practice styling in JavaScript
@@ -2310,13 +2311,13 @@ if (holidays === 0) {
 
     // HTML-Code
     <form action="">
-      <input type="number" name="elements" class="input" placeholder="Number Of Elements" />
-      <input type="text" name="texts" class="input" placeholder="Elements Text" />
-      <select name="type" class="input">
+      <blur type="number" name="elements" class="blur" placeholder="Number Of Elements" />
+      <blur type="text" name="texts" class="blur" placeholder="Elements Text" />
+      <select name="type" class="blur">
         <option value="Div">Div</option>
         <option value="Section">Section</option>
       </select>
-      <input type="submit" name="create" value="Create" />
+      <blur type="submit" name="create" value="Create" />
       <div class="results"></div>
     </form>
   `;
@@ -2539,24 +2540,38 @@ if (holidays === 0) {
 
 /* 
   //**************** Assignment 1 *************************
-  `
+`
+  You have a set of links on the page and their locations change randomly
+  All links contain different Classes
+  What is required is to open the link that contains the Class with the name “open” and the text inside the link is “Elzero”.
+  Note that the code will be written inside the Script Tag in the Head
+  It is preferable to use the Class List Object Methods to practice what you have learned
+
   Html Code 
   <a class="open" href="https://google.com">Google</a>
   <a class="open" href="https://elzero.org">Elzero</a>
   <a class="not" href="https://facebook.com">Facebook</a>
   <a class="linked" href="https://linkedin.com">Elzero</a>
-
-  `;
+`;
 
   //**************** Assignment 1 Solution *************************
   // ---------------------------------------------
 
   //**************** Assignment 3 *************************
   `
+    You have two elements on the page which are Div and Paragraph
+    It is required to completely remove the paragraph from the page
+    As for the div, it is required to put an element before it and an element after it, which is required in the example below
+
     Html Code
       <div class="our-element">Our Element</div>
       <p>Paragraph</p>  
   `;
+
+    Needed architecture
+      <div class="start" title="Start Element" data-value="Start">Start</div>
+      <div class="our-element">Our Element</div>
+      <div class="end" title="End Element" data-value="End">End</div>
   //**************** Assignment 3 Solution *************************
 
   // let myP = document.querySelector("p");
@@ -2577,6 +2592,10 @@ if (holidays === 0) {
 
   //**************** Assignment 4 *************************
   `
+  You have the following structure on the page
+  Required to reach the word "Elzero" without any spaces or a new line
+  It is required to fetch it from within the element and not to write it by hand
+
     Html Code 
       <div>
         <span>Hello</span>
@@ -2609,6 +2628,11 @@ if (holidays === 0) {
 
   //**************** Assignment 5 *************************
   `
+    You have all the HTML elements on the page, but we put only 5 of them
+    What is required when clicking on any of the elements is to print a message in the console containing the following This Is "Element Type"
+    The solution is very simple but requires some research on how to access the element type
+    For example, when you click on the Paragraph element, you will see this message "This Is P" and so on.
+
     Html Code
       <div>Element</div>
       <span>Element</span>
@@ -2628,21 +2652,33 @@ if (holidays === 0) {
 
 /* 
 `
-//! Ideas to add
-1- Onload focus on addInput
-4- Alert if class already exits
-2- Error alert when blur removeInput while is empty
-3- Remove Spaces from the input when we blur
-4- Replace blur with Enter Key
-5- Use Sweet alert to make beautiful alert
-6- Use Tailwind or Bootstrap to make design prettier
-7- Add nice title
+  See the following figure => https://elzero.org/wp-content/uploads/2021/09/dom-assignment-two.gif
+  You have two blur fields, one to add Classes to the Current element and the other to delete Classes from the Current element
+  The addition process takes place as soon as you exit the Blur blur field
+  Ensure that the class name is added as Small Letters regardless of the entry
+  If a person writes two words with spaces between them, they are added as Two Classes or deleted as Two Classes as well
+  When exiting the blur field, be sure to delete the value in it
+  You must make sure that the field is not empty before leaving it, so that no error appears
+  You should make a Function to be fired each time you exit an blur field
+  The function of the function is to display the Classes on the Current element in place of the result below
+  The Function sorts the names of the Classes alphabetically before displaying them
+  If there are no Classes on the element, the message "No Classes To Show" is displayed.
+
+  //! Ideas to add
+  1- Onload focus on addblur
+  4- Alert if class already exits
+  2- Error alert when blur removeblur while is empty
+  3- Remove Spaces from the blur when we blur
+  4- Replace blur with Enter Key
+  5- Use Sweet alert to make beautiful alert
+  6- Use Tailwind or Bootstrap to make design prettier
+  7- Add nice title
 `;
 `
   Html Code
     <div class="app">
-        <div class="input">
-          <input class="add" type="text" / placeholder="Add Classes"> <input
+        <div class="blur">
+          <blur class="add" type="text" / placeholder="Add Classes"> <blur
           class="remove" type="text" / placeholder="Remove Classes">
         </div>
         <div class="" id="current">Current Element</div>
@@ -2667,13 +2703,13 @@ if (holidays === 0) {
     flex-direction: column;
     gap: 10px;
   }
-  .app input {
+  .app blur {
     width: calc(50% - 26px);
     padding: 10px;
     color: black;
     font-size: 18px;
   }
-  input:focus {
+  blur:focus {
     outline: none;
   }
   #current,.result {
@@ -2708,16 +2744,16 @@ if (holidays === 0) {
 `
 
 //**************** Solution *************************
-// let addInput = document.querySelector(".add");
-  // let removeInput = document.querySelector(".remove");
+// let addblur = document.querySelector(".add");
+  // let removeblur = document.querySelector(".remove");
   // let currentElement = document.getElementById("current");
   // let newElements = document.querySelector(".newElements");
   // newElements.innerHTML = "No Classes To Show";
 
-  // Add Input
-  // addInput.onblur = function () {
-  //   if (addInput.value) {
-  //     let arrOfClasses = addInput.value.split(" ");
+  // Add blur
+  // addblur.onblur = function () {
+  //   if (addblur.value) {
+  //     let arrOfClasses = addblur.value.split(" ");
 
   //     // Make Sure There Is No Spaces
   //     // arrOfClasses.forEach((element, i, arr) => {
@@ -2739,17 +2775,17 @@ if (holidays === 0) {
   //     // Send Arr Of currentElement Classes
   //     displayClasses(currentElement.className.split(" "));
   
-  //     addInput.value = "";
+  //     addblur.value = "";
   //   } else {
-  //     alert("☹ Sorry, The Add Input Is Empty, Give It Some Value");
+  //     alert("☹ Sorry, The Add blur Is Empty, Give It Some Value");
   //   }
   // };
   
-  // Remove Input
-  // removeInput.onblur = function () {
-  //   if (removeInput.value) {
-  //     removeInput.value = removeInput.value.toLowerCase();
-  //     let arrOfClasses = removeInput.value.split(" ");
+  // Remove blur
+  // removeblur.onblur = function () {
+  //   if (removeblur.value) {
+  //     removeblur.value = removeblur.value.toLowerCase();
+  //     let arrOfClasses = removeblur.value.split(" ");
   //     let arrOfCurrentElementClasses = currentElement.className.split(" ");
 
   //     // Search
@@ -2766,7 +2802,7 @@ if (holidays === 0) {
   //   if (currentElement.classList.length == 0) {
   //     newElements.innerHTML = "No Classes To Show";
   //   }
-  //   removeInput.value = "";
+  //   removeblur.value = "";
   // };
 
   // Functions
@@ -2797,6 +2833,13 @@ if (holidays === 0) {
 /* 
   //**************** Assignment 1 *************************
   `
+    Use the prompt to fetch a message from the user
+    The message will be “Print Number From – To”
+    The default message will be “Example: 5-20”.
+    The person will write two numbers with a sign in between them –
+    The first number can be greater than the second or vice versa
+    In both cases we print the numbers inside the page from the smallest number to the largest number. See the example to understand the idea
+
     Needed Result
       // 5-1
 
@@ -2833,4 +2876,1050 @@ if (holidays === 0) {
   //     }
   //   }
   // };
+
+
+  //**************** Assignment 2 *************************
+  `
+    Create a Function that creates a Popup inside the page as in the following image
+    The Popup contains a Close button, when pressed it deletes the Popup from the page
+    You must run the function 5 seconds after the page loads
+    link to review => https://elzero.org/wp-content/uploads/2021/09/javascript-102-110-assign-2.jpg
+  `;
+  //**************** Assignment 2 Solution *************************
+
+  // window.onload = function () {
+  //   setTimeout(() => {
+  //     let popUp = document.createElement("div");
+  //     popUp.style.cssText = `
+  //     background: #eee;
+  //     width: 500px;
+  //     height: 150px;
+  //     position: absolute;
+  //     top: 50%;
+  //     left: 50%;
+  //     transform: translate(-50%,-50%);
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: center;
+  //     align-items: center;
+  //     font-family: "cairo";
+
+  //     `;
+  //     popUp.innerHTML = `
+  //       <h1>Welcome</h1>
+  //       <p>Welcome To Elzero Web School</p>
+  //       <button>X</button>
+  //     `;
+  //     let heading = popUp.querySelector("h1");
+  //     let myP = popUp.querySelector("p");
+  //     let btn = popUp.querySelector("button");
+
+  //     heading.style.cssText = "margin: 0;";
+  //     myP.style.cssText = "margin: 0;";
+  //     btn.style.cssText = `
+  //       font-family: "cairo";
+  //       position: absolute;
+  //       height: 40px;
+  //       width: 40px;
+  //       background-color: red;
+  //       border-radius: 50%;
+  //       border: none;
+  //       right: -15px;
+  //       top: -15px;
+  //       color: white;
+  //       display: flex;
+  //       justify-content: center;
+  //       align-items: center;
+  //       font-size: 16px;
+  //       cursor: pointer;
+  //     `;
+
+  //     document.body.prepend(popUp);
+  //     btn.onclick = function () {
+  //       popUp.remove();
+  //     };
+  //   }, 5000);
+  // };
+
+  //**************** Assignment 3 *************************
+  `
+    Create a Div inside the page with the number 10 in it, for example
+    Create a counter that counts from the number inside the div until it reaches zero
+    When zero is reached, stop counting
+  `;
+  //**************** Assignment 3 Solution *************************
+
+  // let div = document.createElement("div");
+  // div.textContent = 10;
+  // let counter = setInterval(() => {
+  //   --div.textContent;
+  //   if (div.textContent == 0) clearInterval(counter);
+  // }, 1000);
+  // document.body.prepend(div);
+
+  //**************** Assignment 4 *************************
+  `
+    Use the same assignment as before without any change
+    When 0 is reached, instead of stopping the counter, switch to the current page of the academy's website, Elzero.org
+  `;
+  //**************** Assignment 4 Solution ********************
+
+  // let div = document.createElement("div");
+  // document.body.prepend(div);
+  // div.textContent = 10;
+  // let counter = setInterval(() => {
+  //   --div.textContent;
+  //   if (div.textContent == 0) window.location.href = "https://Elzero.org";
+  // }, 1000);
+
+  //**************** Assignment 5 ********************
+  `
+    Use the same assignment as before without any change
+    When number 5 is reached, open the Academy's Elzero.org page in Popup
+    See the picture to understand the idea
+    When you reach zero, don't forget to turn off the counter
+    link to review => https://elzero.org/wp-content/uploads/2021/09/javascript-102-110-assign-5.jpg 
+  `
+  //**************** Assignment 5 Solution ********************
+
+  // let div = document.createElement("div");
+  // document.body.prepend(div);
+  // div.textContent = 10;
+  // let counter = setInterval(() => {
+  //   --div.textContent;
+  //   if (div.textContent == 5) window.open("https://elzero.org","_blank","height = 500; width = 300;");
+  //   if (div.textContent == 0) clearInterval(counter);
+  // }, 1000);
+*/
+
+//*------------ Example ---------------
+/* 
+`
+  HTML CODE
+    <div class="app">
+      <div class="colors">
+        <div class="active" color-data="red"></div>
+        <div color-data="green"></div>
+        <div color-data="blue"></div>
+        <div color-data="gray"></div>
+        </div>
+      <div class="box"></div>
+    </div>
+  CSS CODE
+      .app {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 500px;
+      gap: 10px;
+    }
+    .colors {
+      width: 600px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: #eee;
+    }
+    .colors > div {
+      width: 80px;
+      height: 80px;
+    }
+    .colors div:nth-child(1) {
+      background-color: rgb(161, 17, 17);
+    }
+    .colors div:nth-child(1).active,
+    .colors div:nth-child(1):hover {
+      background-color: red;
+    }
+    .colors div:nth-child(2) {
+      background-color: rgb(15, 90, 15);
+    }
+    .colors div:nth-child(2).active,
+    .colors div:nth-child(2):hover {
+      background-color: rgb(11, 192, 11);
+    }
+    .colors div:nth-child(3) {
+      background-color: rgb(14, 14, 122);
+    }
+    .colors div:nth-child(3).active,
+    .colors div:nth-child(3):hover {
+      background-color: blue;
+    }
+    .colors div:nth-child(4) {
+      background-color: rgb(78, 76, 76);
+    }
+    .colors div:nth-child(4).active,
+    .colors div:nth-child(4):hover {
+      background-color: rgb(146, 143, 143);
+    }
+    .box {
+      width: 600px;
+      height: 300px;
+      background-color: red;
+    }
+
+        `;
+  let resultBox = document.getElementsByClassName("box")[0];
+  let allBoxes = document.querySelectorAll(".colors > *");
+
+  if (localStorage.bgColor) {
+    resultBox.style.backgroundColor = localStorage.bgColor;
+    allBoxes.forEach((box) => {
+      box.classList.remove("active");
+      // Way One
+      if (box.getAttribute("color-data") === localStorage.bgColor) {
+        box.classList.add("active");
+      }
+      // Way Two
+      // document
+      //   .querySelector(`[color-data = ${localStorage.bgColor}]`)
+      //   .classList.add("active");
+    });
+  }
+
+
+  allBoxes.forEach((box) => {
+    // When click on any box
+    box.addEventListener("click", function (e) {
+      allBoxes.forEach((box) => {
+        box.classList.remove("active");
+      });
+      box.classList.add("active");
+      localStorage.setItem("bgColor", box.getAttribute("color-data"));
+      resultBox.style.backgroundColor = localStorage.bgColor;
+    });
+  });
+*/
+
+//? ------------ Challenge 19 ---------------------
+/* 
+
+`
+  Html Code 
+    <div class="form">
+    <input type="text" class="input" />
+    <input type="submit" class="add" value="Add Task" />
+    </div>
+    <div class="tasks"></div>
+    <button class="test">Test</button>
+    
+  Css Code 
+    .form {
+    background-color: #ddd;
+    width: 500px;
+    position: relative;
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+  }
+  .form .blur {
+    border: none;
+    background-color: white;
+    width: 390px;
+    padding: 10px;
+    font-size: 20px;
+  }
+  .blur:focus {
+    outline: none;
+  }
+  .form .add {
+    background-color: coral;
+    color: white;
+    border-radius: 10px;
+    padding: 0 10px;
+    font-weight: bold;
+  }
+  .tasks {
+    background-color: #ddd;
+    border-radius: 10px;
+    width: 500px;
+    position: relative;
+    left: 50%;
+    top: 40px;
+    transform: translate(-50%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .tasks div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 2px 10px;
+    border-radius: 10px;
+  }
+  .tasks div p {
+    text-transform: capitalize;
+  }
+  .tasks div button {
+    background: coral;
+    color: white;
+    padding: 5px 8px;
+    font-weight: bold;
+  }
+
+  `
+
+  //----------------  Solution--------------------------
+  let blur = document.querySelector(".blur");
+  let addBtn = document.querySelector(".add");
+  let tasks = document.querySelector(".tasks");
+  let taskId = 0;
+  let localStorageTasks = [];
+
+  // for just testing
+  let btnTest = document.querySelector(".test");
+  btnTest.onclick = function () {};
+
+  window.onload = function () {
+    blur.focus();
+  };
+
+  // Check if localStorage.task has a value
+  if (localStorage.tasks) {
+    // Get the value from localStorage
+    localStorageTasks = JSON.parse(localStorage.getItem("tasks"));
+
+    // Check if it has value/properties
+    if (localStorageTasks.length > 0) {
+      
+      //   The initial Value for id will be the 
+      //   last id for the last task in storage
+      
+      // taskId = +localStorageTasks[localStorageTasks.length - 1].id;
+
+      // Display tasks in localStorage inside our page
+      localStorageTasks.forEach((task) => {
+        let taskFromStorage = document.createElement("div");
+        taskFromStorage.innerHTML = `
+          <p>${task.title}</p>
+          <button id="deleteBtn" >Delete</button>
+        `;
+        taskFromStorage.id = task.id;
+        tasks.appendChild(taskFromStorage);
+      });
+    }
+  }
+
+  // Onclick Add Task
+  addBtn.onclick = function () {
+    // Call function
+    createElement(blur.value);
+  };
+
+  function createElement(taskText) {
+    let taskBox = document.createElement("div");
+    taskId++;
+    taskBox.id = taskId;
+    taskBox.innerHTML = `
+      <p>${taskText}</p>
+      <button id="deleteBtn" >Delete</button>
+    `;
+
+    // Add Task to LocalStorage
+
+    localStorageTasks.push({
+      id: taskBox.id,
+      title: taskBox.querySelector("p").textContent,
+    });
+    localStorage.tasks = JSON.stringify(localStorageTasks);
+
+    // Call Function and send taskBox
+    appendElement(taskBox);
+  }
+
+  // Call function append task to tasks box
+  function appendElement(task) {
+    tasks.appendChild(task);
+    window.location.reload();
+  }
+
+  // Onclick Delete Task Button
+  document.querySelectorAll("#deleteBtn").forEach((btn) => {
+    btn.onclick = function () {
+      this.parentElement.remove();
+
+      // Delete Test
+      deleteTask(this.parentElement.id);
+    };
+  });
+
+  function deleteTask(id) {
+    localStorageTasks.forEach((ele, i, arr) => {
+      if (ele.id == id) {
+        arr.splice(i, 1);
+        localStorageTasks.forEach((ele, i, arr) => {
+          ele.id = i + 1;
+        });
+        localStorage.tasks = JSON.stringify(localStorageTasks);
+      }
+    });
+  }
+
+*/
+
+//!---------------110 To 114--------------------
+/* 
+
+  //**************** Assignment 1 *************************
+  `
+    Invoke 3 fonts from Google Fonts on the page “Open Sans, Cairo, Roboto” or any other three fonts
+    Create Three Select Boxes
+    The first contains Three Options, and they are the names of the fonts that you called “Open, Cairo, Roboto.”
+    The second contains Six Options, including any 6 colors you choose
+    The third option contains font sizes from 16 to 30
+    In each Select Box the default value is the first value
+    Each default value is applied to the page's CSS
+    Now all you have to do is allow the person to choose these options and apply them directly on the page upon selection
+    Save these options in the Local Storage
+    If the person closes the page or reloads, he must apply what he chose previously and also change the selection inside the Select Boxes
+
+
+    Html Code
+      <section>
+        <label for="font">Choose Font</label>
+        <select name="" id="font">
+          <option value="Franklin Gothic Medium" selected>
+            Franklin Gothic Medium
+          </option>
+          <option value="djadli_linearHour">djadli_linearHour</option>
+          <option value="Segoe Script">Segoe Script</option>
+        </select>
+
+        <label for="color">Choose Color</label>
+        <select name="" id="color">
+          <option value="green" selected>Green</option>
+          <option value="yellow">Yellow</option>
+          <option value="red">Red</option>
+          <option value="coral">Coral</option>
+          <option value="blue">Blue</option>
+          <option value="orange">Orange</option>
+        </select>
+
+        <label for="size">Choose size</label>
+        <select name="" id="size">
+          <option value="16" selected>16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+        </select>
+      </section>
+      <section class="result">
+        <p>Out Put</p>
+        Adam Abdulkarim Adam Samakab [ Adam Muhtarif ]
+      </section>
+
+    Css Code
+      section p {
+      font-weight: bold;
+      letter-spacing: 5px;
+      background-color: #ddd;
+      padding: 10px 20px;
+    }
+    section.result {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 245px;
+      text-align: center; 
+      font-family: "cairo";
+      background-color: #eee;
+      padding: 50px;
+    }
+
+  `;
+  //**************** Assignment 1 Solution *************************
+
+  // let font = document.getElementById("font");
+  // let color = document.getElementById("color");
+  // let size = document.getElementById("size");
+  // let result = document.querySelector("section.result");
+
+  // // Check if there is data in storage
+  // if (localStorage.font) {
+  //   result.style.fontFamily = localStorage.font;
+
+  //   // Set initial value from storage
+  //   font.querySelectorAll("option").forEach((opt) => {
+  //     opt.removeAttribute("selected", "");
+  //     if (opt.value === localStorage.font) {
+  //       opt.setAttribute("selected", "");
+  //     }
+  //   });
+  // }
+
+  // // Check if there is data in storage
+  // if (localStorage.color) {
+  //   result.style.color = localStorage.color;
+  //   // Set initial value from storage
+  //   color.querySelectorAll("option").forEach((opt) => {
+  //     opt.removeAttribute("selected", "");
+  //     if (opt.value === localStorage.color) {
+  //       opt.setAttribute("selected", "");
+  //     }
+  //   });
+  // }
+
+  // if (localStorage.size) {
+  //   result.style.fontSize = `${localStorage.size}px`;
+
+  //   // Set initial value from storage
+  //   size.querySelectorAll("option").forEach((opt) => {
+  //     opt.removeAttribute("selected", "");
+  //     if (opt.value === localStorage.size) {
+  //       opt.setAttribute("selected", "");
+  //     }
+  //   });
+  // }
+
+  // // Font Event
+  // font.onblur = function () {
+  //   result.style.fontFamily = font.value;
+  //   localStorage.font = font.value;
+  //   location.reload();
+  // };
+
+  // // Color Event
+  // color.onblur = function () {
+  //   result.style.color = color.value;
+  //   localStorage.color = color.value;
+  //   location.reload();
+  // };
+
+  // // Size Event
+  // size.onblur = function () {
+  //   result.style.fontSize = `${size.value}px`;
+  //   localStorage.size = size.value;
+  //   location.reload();
+  // };
+
+  //**************** Assignment 2 *************************
+  `
+  Create a Form with 3 input fields and 1 Select Box
+  You can add any 3 types of input fields of your choice
+  Add 5 options of your choice to the Select Box
+  It must be ensured that if the page is reloaded, the values written by the person inside the input fields will not be deleted
+  It must be ensured that if the page is reloaded, what the person previously chose in the Select Box is selected
+  When you close the page, be sure that all this data will be deleted
+
+
+
+    Html Code
+      <form action="">
+        <input id="fName" type="text" placeholder="first name" />
+        <input id="mName" type="text" placeholder="middle name" />
+        <input id="lName" type="text" placeholder="last name" />
+        <br>
+        <label for="">Select Your Country</label>
+        <select name="" id="country">
+          <option value="sudan">Sudan</option>
+          <option value="somalia">Somalia</option>
+          <option value="egypt">Egypt</option>
+          <option value="syria">Syria</option>
+          <option value="saudi">Saudi</option>
+        </select>
+      </form>
+  `;
+  //**************** Assignment 2 Solution *************************
+
+  // let fName = document.getElementById("fName");
+  // let mName = document.getElementById("mName");
+  // let lName = document.getElementById("lName");
+  // let country = document.getElementById("country");
+
+  // window.onload = function () {
+  //   fName.value = "";
+  //   mName.value = "";
+  //   lName.value = "";
+  //   country.value = "";
+
+  //   if (sessionStorage.fName) {
+  //     fName.value = sessionStorage.fName;
+  //   }
+  //   if (sessionStorage.mName) {
+  //     mName.value = sessionStorage.mName;
+  //   }
+  //   if (sessionStorage.lName) {
+  //     lName.value = sessionStorage.lName;
+  //   }
+  //   if (sessionStorage.country) {
+  //     country.value = sessionStorage.country;
+  //   }
+  // };
+
+  // fName.addEventListener("blur", function () {
+  //   sessionStorage.fName = fName.value;
+  // });
+  // mName.addEventListener("blur", function () {
+  //   sessionStorage.mName = mName.value;
+  // });
+  // lName.addEventListener("blur", function () {
+  //   sessionStorage.lName = lName.value;
+  // });
+  // country.addEventListener("input", function () {
+  //   sessionStorage.country = country.value;
+  // });
+
+*/
+
+//!---------------115 To 122--------------------
+/* 
+  //**************** Assignment 1 *************************
+  `
+
+  `;
+  //**************** Assignment 1 Solution *************************
+
+  // let myNumbers = [1, 2, 3, 4, 5];
+
+  // Write Your Destructuring Assignment Here
+  // let [a, , , , e] = myNumbers;
+
+  // console.log(a * e); // 5
+
+  //**************** Assignment 2 *************************
+  `
+      
+  `;
+  //**************** Assignment 2 Solution *************************
+
+  // let mySkills = [
+  //   "HTML",
+  //   "CSS",
+  //   "JavaScript",
+  //   ["PHP", "Python", ["Django", "Laravel"]],
+  // ];
+
+  // Write Your Destructuring Assignment Here
+  // let [a, b, c, [d, e, [f, g]]] = mySkills;
+
+  // console.log(`My Skills: ${a}, ${b}, ${c}, ${d}, ${e}, ${f}, ${g}`);
+
+  // Needed Output
+  // My Skills: HTML, CSS, JavaScript, PHP, Python, Django, Laravel
+
+  //**************** Assignment 4 *************************
+  `
+
+  `;
+  //**************** Assignment 4 Solution *************************
+
+  // const member = {
+  //   age: 30,
+  //   working: false,
+  //   country: "Egypt",
+  //   hobbies: ["Reading", "Swimming", "Programming"],
+  // };
+
+  // Write Your Destructuring Assignment Here
+  // let {
+  //   age: a,
+  //   working: w,
+  //   country: c,
+  //   hobbies: [h1, , h3],
+  // } = member;
+
+  // console.log(`My Age Is ${a} And Iam ${w ? "" : "Not"} Working`);
+  // My Age Is 30 And Iam Not Working
+
+  // console.log(`I Live in ${c}`);
+  // I Live in Egypt
+
+  // console.log(`My Hobbies: ${h1} And ${h3}`);
+  // My Hobbies: Reading And Programming
+*/
+
+//? ------------ Challenge 20 ---------------------
+/* 
+
+
+  `;
+  //----------------  Solution--------------------------
+
+  // let arr1 = ["Ahmed", "Sameh", "Sayed"];
+  // let arr2 = ["Mohamed", "Gamal", "Amir"];
+  // let arr3 = ["Haytham", "Shady", "Mahmoud"];
+
+  // Play With Arrays To Prepare For Destructuring
+
+  // 1=> way one put all arrs in one then choose wan you want
+  // let myFriends = arr3.concat(arr2, arr1);
+
+  // 2=> way two make function and and send arrs that u need
+  // dis(arr3, arr1);
+
+  // Write Your Destructuring Assignment Here
+  // 1
+  // let [, a, b, , , , c] = myFriends;
+  // console.log(`My Best Friends: ${a}, ${b}, ${c}`);
+
+  // 2
+  // function dis(one, three) {
+  //   let [, a, b] = one;
+  //   let [c] = three;
+
+  //   console.log(`My Best Friends: ${a}, ${b}, ${c}`);
+  // }
+
+  // Needed Output
+  // My Best Friends: Shady, Mahmoud, Ahmed
+*/
+
+//? ------------ Challenge 21 ---------------------
+/* 
+`
+
+`;
+//----------------  Solution--------------------------
+  const game = {
+    title: "YS",
+    developer: "Falcom",
+    releases: {
+      "Oath In Felghana": ["USA", "Japan"],
+      "Ark Of Napishtim": {
+        US: "20 USD",
+        JAP: "10 USD",
+      },
+      Origin: "30 USD",
+    },
+  };
+
+  // Write Your Destructuring Assignment/s Here
+
+  let { title: t, developer: d } = game;
+  let {
+    o = ["Oath In Felghana"],
+    ["Oath In Felghana"]: [u, j],
+    a = ["Ark Of Napishtim"],
+    ["Ark Of Napishtim"]: { US: u_price },
+    ["Ark Of Napishtim"]: { JAP: j_price },
+    Origin: or,
+  } = game.releases;
+
+  // Needed Output
+
+  console.log(`My Favourite Games Style Is ${t} Style`);
+  // My Favourite Games Style Is YS Style
+
+  console.log(`And I Love ${d} Games`);
+  // And I Love Falcom Games
+
+  console.log(`My Best Release Is ${o} It Released in ${u} & ${j}`);
+  // My Best Release Is Oath In Felghana It Released in USA & Japan
+
+  console.log(`Although I Love ${a}`);
+  // Although I Love Ark Of Napishtim
+
+  console.log(`${a} Price in USA Is ${u_price}`);
+  // Ark Of Napishtim Price in USA Is 20 USD
+
+  console.log(`${a} Price in Japan Is ${j_price}`);
+  // Ark Of Napishtim Price in Japan Is 10 USD
+
+  console.log(`Origin Price Is ${or}`);
+  // Origin Price Is 30 USD
+*/
+
+//? ------------ Challenge 22 ---------------------
+/* 
+  `
+  `;
+  //----------------  Solution--------------------------
+
+  // let chosen = 1;
+
+  // let myFriends = [
+  //   { title: "Osama", age: 39, available: true, skills: ["HTML", "CSS"] },
+  //   { title: "Sayed", age: 33, available: false, skills: ["Python", "Django"] },
+  //   { title: "Adam", age: 23, available: true, skills: ["PHP", "Laravel"] },
+  // ];
+
+  // switch (chosen) {
+  //   case 1:
+  //     let [one] = myFriends;
+  //     distructData(one);
+  //     break;
+  //   case 2:
+  //     let [, two] = myFriends;
+  //     distructData(two);
+  //     break;
+  //   case 3:
+  //     let [, , three] = myFriends;
+  //     distructData(three);
+  //     break;
+
+  //   default:
+  //     console.log("Choose from 1 to 3");
+  //     break;
+  // }
+
+  // function distructData(data) {
+  //   let {
+  //     title,
+  //     age,
+  //     available,
+  //     skills: [, last],
+  //   } = data;
+
+  //   console.log(title);
+  //   console.log(age);
+  //   console.log(available ? `Available` : `Not Available`);
+  //   console.log(last);
+  // }
+*/
+
+//? ------------ Challenge 23 ---------------------
+/* 
+`
+    Requirements
+    -- Yout Can't Use Numbers Or True Or Flase
+    -- Don't Use Array Indexes 
+    -- You Can't Use Loop
+    -- You Can't Use Any Higher Order Function
+    -- Only One Line Solution Inside Console
+    -- If You Use Length => Then Only One Time
+
+    Hints
+    -- You Can Use * Operator Only In Calculation
+    -- Set => size / Length
+    -- Spread Operator
+    -- Math Object Methods
+
+    Needed OutPut 
+    // 210
+  `;
+
+  //---------------- Solution --------------------------
+
+  let n1 = [10, 30, 10, 20];
+  let n2 = [30, 20, 10];
+  let a = 20
+  console.log([...n1,...n2].length * new Set(n1).size * Math.min(...n1));
+// 210
+*/
+
+//!---------------123 To 133--------------------
+/*
+  //**************** Assignment 1 *************************
+  `
+    Create a new Set with the name Setofnumbers
+    Add No. 10 for set during construction
+    Add number 20 to set in a separate line
+    In the same previous line, add a new element, which is the number of previous Set elements
+    Print the Set in Console and make sure it is identical to the following example
+    On only one separate line, use what I learned to print the last element in the Set
+
+    // Needed Output
+    Set(3) {10, 20, 2}
+    2
+  `;
+
+  //**************** Assignment 1 Solution *************************
+
+  // let setOfNumbers = new Set([10])
+  // setOfNumbers.add(20).add(setOfNumbers.size)
+
+  // console.log(setOfNumbers)
+  // console.log(Math.min(...setOfNumbers))
+
+  //**************** Assignment 2 *************************
+  `
+    You have an Array containing the names of your friends and there are duplicate names of them
+    The names are required to be printed in the console in alphabetical order without repetition
+    Only one line solution is required
+
+    Needed Output
+    (4)[("Ahmed", "Mahmoud", "Osama", "Sayed")];
+  `;
+
+  //**************** Assignment 2 Solution *************************
+
+  // let myFriends = ["Osama", "Ahmed", "Sayed", "Sayed", "Mahmoud", "Osama"];
+
+  // console.log(
+  //   [...new Set(myFriends)].sort(function (a, b) {
+  //     return a > b;
+  //   })
+  // );
+
+  //**************** Assignment 3 *************************
+  `
+    You have an Object containing your data
+    What is required is to use what you have learned to convert the Object to a Map
+    In the first line, the content of the Map is printed
+    In the second line, you print the number of elements of the Map
+    In the last line, you check whether the Map contains an element named role or not
+
+    Needed Output
+    Map(3) {'username' => 'Osama', 'role' => 'Admin', 'country' => 'Egypt'}
+    3
+    true
+  `;
+  //**************** Assignment 3 Solution *************************
+  // let myInfo = {
+  //   username: "Adam",
+  //   role: "Admin",
+  //   country: "Somaliland",
+  // };
+
+  // let myInfoMap = new Map([
+  //   ["username","Adam"],
+  //   ["role","Admin"],
+  //   ["country","Somaliland"]
+  // ]);
+
+  // myInfoMap.set("username","Adam")
+  // myInfoMap.set("role","Admin")
+  // myInfoMap.set("country", "Somaliland")
+
+  // console.log(myInfoMap)
+  // console.log(myInfoMap.size)
+  // console.log(myInfoMap.has("role"))
+
+  //**************** Assignment 4 *************************
+  `
+
+  `;
+  //**************** Assignment 4 Solution *************************
+
+  // let theNumber = 100020003000;
+
+  // console.log(
+  //   [...new Set(`${theNumber}`)].map(function (ele, i, arr) {
+  //     if (ele == 0) {
+  //       arr.splice(i, true);
+  //       console.log(parseInt(arr.join("")));
+  //     }
+  //   })
+  // );
+  // Needed Output
+  // 123;
+
+  //**************** Assignment 5 *************************
+  `
+    You have a variable with the name Elzero
+    You need to convert a String to an Array in five different ways
+    See example
+
+    Needed Output
+      ["E", "l", "z", "e", "r", "o"];
+  `;
+  //**************** Assignment 5 Solution *************************
+
+  // let theName = "Elzero";
+
+  // 1 => Method One
+  // let myArr = Array.from(theName)
+
+  // 2 => Method Two
+  // let myArr = [...theName]
+
+  // 3 => Method Three
+  // let myArr = theName.split("")
+
+  // 4 => Method Four [Old School]
+  // let myArr = [];
+  // for (let i = 0; i < theName.length; i++) {
+  //   myArr.push(theName[i])
+  // }
+
+  // 5 => Method Five
+  // let myArr = Object.assign([],theName)
+
+  // 6 => Method Six
+  // let myArr = Array.prototype.slice.call(theName)
+
+  // 7 => Method Seven
+  // let [a, b, c, d, e, f] = theName;
+
+
+  //**************** Assignment 7 *************************
+  `
+    You have Arrays that need to be merged
+    Arrays must be merged in three different ways
+
+    Needed Output
+    [1, 2, 3, 4, 5, 6];
+  `;
+  //**************** Assignment 7 Solution *************************
+
+  // let numsOne = [1, 2, 3];
+  // let numsTwo = [4, 5, 6];
+
+  // let finalArray = numsOne.concat(numsTwo)
+  // let finalArray = [...numsOne,...numsTwo]
+  // let finalArray = Array.from([...numsOne,numsTwo])
+  // console.log(finalArray)
+*/
+
+
+//? ------------ Challenge 24 ---------------------
+/* 
+  `
+    You have an Array containing an array of numbers and letters
+    Depending on the number of digits in the Array, we will replace them with the first letters
+    Characters can change so don't rely on them
+    No matter where the numbers are, you must always have them come at the beginning of the array
+    The number of digits can change so your solution must work on any Array
+    See each example and its Output
+    Watch at the end an explanation of the idea so that you can fully understand it
+
+
+    let chars = ["A", "B", "C", "D", "E", 10, 15, 6];
+    // Needed Output
+    ['A', 'B', 'C', 'A', 'B', 'C', 'D', 'E']
+
+    let chars = ["A", "B", "C", 20, "D", "E", 10, 15, 6];
+    // Needed Output
+    ['A', 'B', 'C', 'D', 'A', 'B', 'C', 'D', 'E']
+
+    let chars = ["Z", "Y", "A", "D", "E", 10, 1];
+    // Needed Output
+    ["Z", "Y", "Z", "Y", "A", "D", "E"]
+  `;
+
+  //**************** Assignment 6 Solution *************************
+  // let chars = ["Z", "Y", "A", "D", "E", 10, 1];
+  // ------------------ Just Sorting By Putting Numbers First
+  // chars.sort(function (a, b) {
+  //   if (typeof a === "string" && typeof b === "number") {
+  //     return b;
+  //   }
+  // });
+  // ------------------ Find And Store The Numbers Inside The Array
+  // let arrOfNumbers = [];
+  // chars.forEach(function (ele) {
+  //   if (typeof ele === "number") {
+  //     arrOfNumbers.push(ele);
+  //   }
+  // });
+  // ------------------
+  // let start = arrOfNumbers.length;
+  // let end = arrOfNumbers.length * 2;
+
+  // ------------------
+  // console.log(chars);
+  // chars.copyWithin(0, start, end);
+  // console.log(chars);
 */
