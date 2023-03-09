@@ -3115,8 +3115,6 @@ if (holidays === 0) {
   });
 */
 
-<<<<<<< HEAD
-=======
 
 //!---------------102 To 110--------------------
 /* 
@@ -3892,10 +3890,6 @@ if (holidays === 0) {
   // Origin Price Is 30 USD
 */
 
-<<<<<<< HEAD
-=======
-
->>>>>>> a433f7c9d9d52a48a28c76b2282f216b79cc2fd0
 //? ------------ Challenge 22 ---------------------
 /* 
   `
@@ -3943,7 +3937,6 @@ if (holidays === 0) {
   //   console.log(last);
   // }
 */
-<<<<<<< HEAD
 
 //? ------------ Challenge 23 ---------------------
 /* 
@@ -4179,5 +4172,4 @@ if (holidays === 0) {
   // chars.copyWithin(0, start, end);
   // console.log(chars);
 */
-=======
->>>>>>> a433f7c9d9d52a48a28c76b2282f216b79cc2fd0
+// hi adam
