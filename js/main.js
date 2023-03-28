@@ -4263,3 +4263,161 @@ i did this because i had problem with the commenting the code
 // console.log(date4.match(re)); // "25 10 82"
 */
 
+
+//!---------------147 To 158--------------------
+/* 
+  //**************** Assignment 1 *******************
+  `
+    You have the following Constructor Function that needs to be converted to Class Syntax
+    Don't rely on software and do it yourself to make sure you know Syntax
+    Add two Methods, one named run and one named stop
+    Each of them contains a message
+    The first, Car Is Running Now, and the second, Car Is Stopped
+    Create three cars with this class with whatever data you choose
+    Print the data of the first car of them in the console as shown below
+    In the next line, print the Method named run
+  `
+  // function Car(name, model, price) {
+  //   this.n = name;
+  //   this.m = model;
+  //   this.p = price;
+  // }
+
+  // Needed Output
+
+  ("Car One Name Is MG And Model Is 2022 And Price Is 420000");
+  ("Car Is Running Now");
+  //**************** Assignment 1 Solution *******************
+
+  // class Car {
+  //   constructor(name, model, price) {
+  //     this.n = name;
+  //     this.m = model;
+  //     this.p = price;
+  //   }
+  //   run() {
+  //     return `Car Is Running Now`;
+  //   }
+  //   stop() {
+  //     return `Car Is Stopped`;
+  //   }
+  // }
+
+  // let carOne = new Car("Suzuki", 2000, 1000);
+  // let carTwo = new Car("Hoyonda", 2001, 1300);
+  // let carThree = new Car("Toyota", 1990, 900);
+
+  // console.log(
+  //   `Car One Name Is ${carOne.n} And Model Is ${carOne.m} And Price Is ${carOne.p}`
+  // );
+  // console.log(carOne.run());
+
+  //**************** Assignment 2 *******************
+  `
+    We have the next class called Phone
+    We need to create another class named Tablet that inherits the properties of the Phone class
+    The Class of the Tablet contains the Property increment, which is the size
+    It also contains a Method called fullDetails
+    We used the class called Tablet to create more than one Tablet
+    We then used the method called fullDetails, which prints data about the tablet
+    Now all you have to do is create the Tablet Class so that the data appears as shown below
+    If the person does not type the size, the word Unknown should appear
+  `
+  //**************** Assignment 2 Solution *******************
+  // class Phone {
+  //   constructor(name, serial, price) {
+  //     this.name = name;
+  //     this.serial = serial;
+  //     this.price = price;
+  //   }
+  // }
+
+  // Write Tablet Class Here
+  // class Tablet extends Phone {
+  //   constructor(name, serial, price, size = "Unkown") {
+  //     super(name, serial, price);
+  //     this.size = size;
+  //   }
+  //   fullDetails() {
+  //     return`${this.name} Serial Is ${this.serial} And size Is ${this.size}`
+  //   }
+  // }
+
+  // let TabletOne = new Tablet("iPad", 100200300, 1500, 12.9);
+  // let TabletTwo = new Tablet("Nokia", 350450650, 800, 10.5);
+  // let TabletThree = new Tablet("LG", 250450650, 650);
+
+  // console.log(`${TabletOne.fullDetails()}`);
+  // iPad Serial is 100200300 And Size Is 12.9
+
+  // console.log(`${TabletTwo.fullDetails()}`);
+  // Nokia Serial is 350450650 And Size Is 10.5
+
+  // console.log(`${TabletThree.fullDetails()}`);
+  // LG Serial is 250450650 And Size Is Unknown
+
+
+  //**************** Assignment 4 *******************
+  `
+    You have the following String
+    We then use a Method called addLove
+    The result appears as in the Output below
+    What do you need to write for this method to work and show the required result
+  `
+  //**************** Assignment 4 Solution *******************
+
+  // Write Your Code Here
+  // String.prototype.addLove = function () {
+    // return `I Love Elzero Web School`
+    // }
+    
+    // Do Not Edit Below
+    // let myStr = "Elzero";
+    // console.log(myStr.addLove()); // I Love Elzero Web School
+    
+  //**************** Assignment 5 *******************
+  `
+    We have the following Object
+    After it there is a line that changes the value of the score
+    After that, there is a Loop that prints the entire content of the Object, the name of the Property, and next to it the value
+    After that, the content of the Object is printed in the console
+    It is forbidden to modify the content of the Object, the Loop, or the print line in the Console
+    In the space provided, you must write the code to do the required
+    Required Do not allow the score value to be changed
+    It is required not to show the id inside the loop, but it appears without any problem in the content of the object in the console
+    It is required that the Country not appear in the Loop nor in the Object content in the Console
+  `
+  //**************** Assignment 5 Solution *******************
+
+  // const myObj = {
+  //   username: "Adam-Muhtarif",
+  //   id: 100,
+  //   score: 1000,
+  //   country: "Somaliland",
+  // };
+
+  // Write Your Code Here
+  // Object.defineProperties(myObj, {
+  //   score: {
+  //     writable: false,
+  //   },
+  //   id: {
+  //     enumerable: false,
+  //   }
+  // })
+  // delete myObj.country;
+
+  // myObj.score = 500;
+
+
+  // console.log(myObj);
+
+  // Needed Output
+
+  "username => Elzero"
+  "score => 1000"
+  // {username: 'Elzero', score: 1000, id: 100}
+*/
+
+
+
