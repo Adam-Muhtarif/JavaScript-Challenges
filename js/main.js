@@ -4264,6 +4264,82 @@ i did this because i had problem with the commenting the code
 */
 
 
+
+//? ------------ Challenge 26 ---------------------
+/*
+`
+  You have the following class named User
+  We need to modify it as you want to do what is required below
+  First, block access to the Card Property directly
+  When creating users, you notice that each person wrote the Card Number in a different way
+  We need all numbers to be a String and after every 4 numbers a sign - as in the Output
+  User creation lines and console lines must not be modified
+`
+
+
+// Edit The Class
+class User {
+  #card;
+  // Properties
+  constructor(username, card) {
+    this.username = username;
+    this.#card = card;
+  }
+  // Property As A Function Returns Valid Card Number
+  get #validCard() {
+    this.#card = this.#card.toString();
+    this.#card = this.#card.replaceAll("-", "");
+    let start = 0;
+    let end = 4;
+    let group = "";
+    let cardArray = [];
+
+    if (this.#card.length === 16) {
+      for (let i = 0; i < 4; i++) {
+        group = this.#card.slice(start, end);
+        i !== 3 ? group = group.concat("-") : "";
+        cardArray.push(group);
+        start += 4;
+        end += 4;
+      }
+      this.#card = cardArray.join("");
+    }
+    return this.#card;
+  }
+
+  // Methods
+  showData() {
+    return `Hello ${this.username} Your Credit Card Number Is ${
+      this.#validCard || "❌Wrong Card Number"
+    }`;
+  }
+}
+
+// Do Not Edit Anything Below
+
+let userOne = new User("Osama", "1234-5678-1234-5678");
+let userTwo = new User("Ahmed", "1234567812345678");
+let userThree = new User("Ghareeb", 1234567812345678);
+let userFour = new User("Adam Samakab", 4850862534109836);
+
+console.log(userOne.showData());
+// Hello Osama Your Credit Card Number Is 1234-5678-1234-5678
+
+console.log(userTwo.showData());
+// Hello Ahmed Your Credit Card Number Is 1234-5678-1234-5678
+
+console.log(userThree.showData());
+// Hello Ghareeb Your Credit Card Number Is 1234-5678-1234-5678
+
+console.log(userFour.showData());
+
+console.log(userOne.c); // Prevent Accessing To Card Property Here
+// Undefined
+*/
+
+
+
+
 //!---------------147 To 158--------------------
 /* 
   //**************** Assignment 1 *******************
