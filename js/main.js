@@ -4420,4 +4420,215 @@ i did this because i had problem with the commenting the code
 */
 
 
+//!---------------159 To 168--------------------
+/*
+//**************** Assignment 1 *******************
+`
+  Print the seconds, minutes, hours, days, months and years of your date of birth using the time
+  See the result below to know the required idea
+  What is required is to print the values from your date of birth and not the result below
+
+  // Needed Output
+
+  "1247939400 Seconds"
+  "20798990 Minutes"
+  "346650 Hours"
+  "14444 Days"
+  "481 Months"
+  "40 Years"
+`
+//**************** Assignment 1 Solution *******************
+
+// let currentDate = new Date()
+// let myBirthday = new Date("Dec 11 99")
+// let myAge = currentDate - myBirthday;
+
+// console.log(`${Math.round(myAge / 1000) } Seconds`)
+// console.log(`${Math.round(myAge / 1000 / 60)} Minutes`)
+// console.log(`${Math.round(myAge / 1000 / 60 / 60)} Hours`)
+// console.log(`${Math.round(myAge / 1000 / 60 / 60 / 24)} Days`)
+// console.log(`${Math.round(myAge / 1000 / 60 / 60 / 24 / 30)} Months`)
+// console.log(`${Math.round(myAge / 1000 / 60 / 60 / 24 / 365)} Years`)
+
+//**************** Assignment 2 *******************
+"Print the time 10 years after the start of the time"
+"Add only one second to the time"
+"Regardless of your Time Zone, we want the time to be 00:00:01"
+"See the result below to know the required idea"
+
+// Needed Output
+
+"Tue Jan 01 1980 00:00:01 GMT+0200 (Eastern European Standard Time)"
+
+//**************** Assignment 2 Solution *******************
+
+// let result = new Date("Jan 1 1980")
+// console.log(result)
+// console.log(result.setSeconds(1))
+// console.log(result)
+
+// Needed Output
+
+// "Tue Jan 01 1980 00:00:01 GMT+0200 (Eastern European Standard Time)"
+
+//**************** Assignment 3 *******************
+"In the first line, print the full date and time of the last day of the previous month"
+"In the second line, print the name of the previous month and the last day of it as below"
+"The letter should be printed in the same format"
+
+// Needed Output
+
+"Sat Apr 30 2022 18:13:20 GMT+0200 (Eastern European Standard Time)"
+"Previous Month Is April And Last Day Is 30"
+
+//**************** Assignment 3 Solution *******************
+
+// let result = new Date(2023, 1, 28, 18, 13, 20)
+// let arrOfMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+// console.log(result)
+// console.log(`Previous Month Is ${arrOfMonths[result.getMonth()]} And Last Day Is ${result.getDate()}`)
+
+// Needed Output
+
+// "Sat Apr 30 2022 18:13:20 GMT+0200 (Eastern European Standard Time)"
+// "Previous Month Is April And Last Day Is 30"
+
+//**************** Assignment 4 *******************
+"Print your date and time of birth in 3 different ways"
+"The way to write the date inside a String is all the same, String Date"
+"Make sure that the 3 methods print the date and time with the same values as below"
+
+// Needed Output
+
+"Mon Oct 25 1982 00:00:00 GMT+0200 (Eastern European Standard Time)"
+"Mon Oct 25 1982 00:00:00 GMT+0200 (Eastern European Standard Time)"
+"Mon Oct 25 1982 00:00:00 GMT+0200 (Eastern European Standard Time)"
+
+//**************** Assignment 4 Solution *******************
+
+// let myBirthdayOne = new Date("Dec 11 99")
+// console.log(myBirthdayOne)
+// let myBirthdayTwo = new Date("12 11 1999")
+// console.log(myBirthdayTwo)
+// let myBirthdayThree = new Date(1999,11,11)
+// console.log(myBirthdayThree)
+
+// Needed Output
+
+// "Mon Oct 25 1982 00:00:00 GMT+0200 (Eastern European Standard Time)"
+// "Mon Oct 25 1982 00:00:00 GMT+0200 (Eastern European Standard Time)"
+// "Mon Oct 25 1982 00:00:00 GMT+0200 (Eastern European Standard Time)"
+
+//**************** Assignment 5 *******************
+"Calculate the time required to print from one number to 99999 in the console"
+"Performance.now() should be used."
+"See the message to be printed below"
+"Fractions should be removed from the number and not rounded"
+
+// Needed Output
+
+"Loop Took 1921 Milliseconds."
+
+//**************** Assignment 5 Solution ******************
+
+// let startZero = new Date();
+// let startOne = performance.now();
+// let startTwo = performance.mark("start", {
+//   detail: "some details",
+// });
+
+// if (1 < 100) {
+//   for (let i = 1; i <= 100_000; i++) {
+//     console.log(i);
+//   }
+// }
+
+// let endZero = new Date();
+// let endOne = performance.now();
+// let endTwo = performance.mark("end");
+
+// console.log(`${endZero - startZero} ms`);
+// console.log(`${endOne - startOne} ms`);
+// console.log(`${endTwo.startTime - startTwo.startTime} ms`);
+
+//**************** Assignment 6 ******************
+"Create a Generator Function that generates numbers"
+"Make sure it prints the numbers in the same pattern as below"
+"The numbers must be infinity"
+
+//**************** Assignment 6 Solution ******************
+
+// function* gen() {
+//   let specialNum = 140;
+//   let num = 14;
+//   yield num;
+//   while (true) {
+//     yield (num += specialNum);
+//     specialNum += 200;
+//   }
+// }
+
+// // Write Your Generator Function Here
+
+// let generator = gen();
+
+// console.log(generator.next()); // {value: 14, done: false}
+// console.log(generator.next()); // {value: 154, done: false}
+// console.log(generator.next()); // {value: 494, done: false}
+// console.log(generator.next()); // {value: 1034, done: false}
+// console.log(generator.next()); // {value: 1774, done: false}
+// console.log(generator.next()); // {value: 2714, done: false}
+// console.log(generator.next()); // {value: 3854, done: false}
+// console.log(generator.next()); // {value: 5194, done: false}
+// console.log(generator.next()); // {value: 6734, done: false}
+
+//**************** Assignment 7 ******************
+"You have two Generators Function"
+"What is required is a Generator Function that does a Delegate for the rest of the Generator Functions"
+"You should use what you learned to make the last Function exclude duplicate values"
+"Watch the code to see the result to understand what is required"
+
+//**************** Assignment 7 Solution ******************
+
+// function* genNumbers() {
+//   yield* new Set([1, 2, 2, 2, 3, 4, 5]);
+// }
+// function* genLetters() {
+//   yield* new Set(["A", "B", "B", "B", "C", "D"]);
+// }
+
+// // Write Your Generator Function Here
+// function* genAll() {
+//   yield* genNumbers()
+//   yield* genLetters()
+// }
+
+// let generator = genAll();
+
+// console.log(generator.next()); // {value: 1, done: false}
+// console.log(generator.next()); // {value: 2, done: false}
+// console.log(generator.next()); // {value: 3, done: false}
+// console.log(generator.next()); // {value: 4, done: false}
+// console.log(generator.next()); // {value: 5, done: false}
+// console.log(generator.next()); // {value: "A", done: false}
+// console.log(generator.next()); // {value: "B", done: false}
+// console.log(generator.next()); // {value: "C", done: false}
+// console.log(generator.next()); // {value: "D", done: false}
+
+//**************** Assignment 8 ******************
+"You have the line below in the main file Main.js that is a Function that accepts three values and sums them"
+"Create the mod - one.js file which contains this Function with 3 Parameters"
+"The function must be unnamed and do the necessary work in the file to be able to use it in the main.js file"
+"Create a mod - two.js file"
+"Copy into it the three variables below and never modify them"
+"Write whatever you want in the mod - two.js file so that the code in the main.js file works properly"
+//**************** Assignment 8 Solution ******************
+
+// import * as modTwo from "./mod-two.js"
+// import calc from "./mod-one.js"
+
+// // main.js File
+// console.log(calc(modTwo.numOne, modTwo.numTwo, modTwo.numThree)); // 60
+
+*/
 
