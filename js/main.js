@@ -4700,11 +4700,11 @@ console.log(userOne.c); // Prevent Accessing To Card Property Here
 "Write whatever you want in the mod - two.js file so that the code in the main.js file works properly"
 //**************** Assignment 8 Solution ******************
 
-// import * as modTwo from "./mod-two.js"
-// import calc from "./mod-one.js"
+import * as modTwo from "./../module/mod-two.js"
+import calc from "./../module/mod-one.js"
 
-// // main.js File
-// console.log(calc(modTwo.numOne, modTwo.numTwo, modTwo.numThree)); // 60
+// main.js File
+console.log(calc(modTwo.numOne, modTwo.numTwo, modTwo.numThree)); // 60
 
 */
 
