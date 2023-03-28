@@ -4139,7 +4139,7 @@ if (holidays === 0) {
     ["Z", "Y", "Z", "Y", "A", "D", "E"]
   `;
 
-  //**************** Assignment 6 Solution *************************
+  //**************** Solution *************************
   // let chars = ["Z", "Y", "A", "D", "E", 10, 1];
   // ------------------ Just Sorting By Putting Numbers First
   // chars.sort(function (a, b) {
@@ -4163,4 +4163,38 @@ if (holidays === 0) {
   // chars.copyWithin(0, start, end);
   // console.log(chars);
 */
-// All Errors Solved
+
+
+//? ------------ Challenge 25 ---------------------
+/* 
+  `
+    You have a bunch of links
+    Only one Pattern is required to make a match for all of these links
+  `
+  //****************  Solution *************************
+
+  let url1 = "elzero.org";
+  let url2 = "http://elzero.org";
+  let url3 = "https://elzero.org";
+  let url4 = "https://www.elzero.org";
+  let url5 = "https://www.elzero.org:8000/articles.php?id=100&cat=topics";
+  let url6 = "www.elzero.org";
+  let url7 = "http://www.elzero.org";
+  let url8 = "http://www.elzero.com";
+
+` 
+replace (*) with * only 
+i did this because i had problem with the commenting the code
+ let urlReg = /(https?:\/\/)?(www.)?\w+\.\w+.(*)/gi;
+`
+  console.log(1,url1.match(urlReg));
+  console.log(2,url2.match(urlReg));
+  console.log(3, url3.match(urlReg));
+  console.log(4, url4.match(urlReg));
+
+  console.log(5, url5.match(urlReg));
+
+  console.log(6,url6.match(urlReg));
+  console.log(7,url7.match(urlReg));
+  console.log(8,url8.match(urlReg));
+*/
