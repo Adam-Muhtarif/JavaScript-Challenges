@@ -4198,3 +4198,68 @@ i did this because i had problem with the commenting the code
   console.log(7,url7.match(urlReg));
   console.log(8,url8.match(urlReg));
 */
+
+
+//!---------------134 To 146--------------------
+/* 
+//**************** Assignment 1 *************************
+`
+  You have the following IP RegExp Pattern to match this IP
+`;
+//**************** Assignment 1 Solution *****************
+// let ip = "2001:db8:3333:4444:5555:6666:7777:8888";
+// let RegExp = /\d{4}:\w{2}\d:(\d{4}:?)+/gi;
+// console.log(ip.match(RegExp))
+
+//**************** Assignment 2 *************************
+`
+  You have a variable with some names
+  Create a RegExp Pattern to match names starting with Os and ending with O
+`
+//**************** Assignment 2 Solution *******************
+// let specialNames = "Os10O OsO Os100O Osa100O Os1000 Os100m";
+// let RegExp = /\bOs(\w+)?(\d+)?O\b/ig;
+// console.log(specialNames.match(RegExp))
+// Output
+// ['Os10O', 'OsO', 'Os100O', 'Osa100O']
+
+//**************** Assignment 3 *******************
+`
+  You have a variable that contains a phone number in a specific shape
+  A RegExp Pattern is required to match this phone
+`
+//**************** Assignment 3 Solution *******************
+
+// let phone = "+(995)-123 (4567)";
+// let RegExp = /^\+\(\d{3}\)\-\d{3}\s\(\d{4}\)/ig;
+// console.log(phone.match(RegExp))
+
+//**************** Assignment 4 *******************
+`
+  You have Regular Expression Pattern
+  It is required to divide it into parts and explain each part in a separate comment
+`
+//**************** Assignment 4 Solution *******************
+
+//  let re = /https?:\/\/(?:[-\w]+\.)?([-\w]+)\.\w+(?:\.\w+)?\/?.(add*)/i;
+
+//**************** Assignment 5 *******************
+`
+  have a bunch of dates
+  Only one Pattern is required to match all of these dates
+`
+//**************** Assignment 5 Solution *******************
+
+// let date1 = "25/10/1982";
+// let date2 = "25 - 10 - 1982";
+// let date3 = "25 10 1982";
+// let date4 = "25 10 82";
+
+// let re = /\d+(?:\/|\s)-?\s?\d+[\/|\s]-?\s?\d+/i; // Write Pattern Here
+
+// console.log(date1.match(re)); // "25/10/1982"
+// console.log(date2.match(re)); // "25 - 10 - 1982"
+// console.log(date3.match(re)); // "25 10 1982"
+// console.log(date4.match(re)); // "25 10 82"
+*/
+
